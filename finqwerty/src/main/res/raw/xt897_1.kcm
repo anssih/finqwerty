@@ -1,0 +1,251 @@
+###############
+#
+# Copyright (C) 2010 The Android Open Source Project
+# Copyright (C) 2014 Anssi Hannula
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#
+################
+
+type OVERLAY
+
+map key 51    SEMICOLON
+map key 52    EQUALS
+map key 53    PERIOD
+map key 13    COMMA
+map key 232   SLASH
+# q
+map key 100   ALT_LEFT
+#map key 100   SYM
+# d4
+map key 162   ALT_LEFT
+#map key 162   SYM
+
+# q, orig CAPS
+map key 58    CTRL_LEFT
+# q4, orig CAPS
+map key 222   CTRL_LEFT
+
+key C {
+    label:                              'C'
+    base:                               'c'
+    shift, capslock:                    'C'
+    alt:                                '\u00a9'
+    ctrl, meta:                         none
+}
+
+key E {
+    label:                              'E'
+    base:                               'e'
+    shift, capslock:                    'E'
+    alt:                                '\u20ac'
+    ctrl, meta:                    none
+}
+
+key I {
+    label:                              'I'
+    base:                               'i'
+    shift, capslock:                    'I'
+    alt:                                '\u0303'
+    ctrl, meta:                    none
+}
+
+key O {
+    label:                              'O'
+    base:                               'o'
+    shift, capslock:                    'O'
+    alt:                                '\u0302'
+    ctrl, meta:                    none
+}
+
+key P {
+    label:                              'P'
+    base:                               'p'
+    shift, capslock:                    'P'
+    alt:                                '\u0308'
+    ctrl, meta:                    none
+}
+
+key S {
+    label:                              'S'
+    base:                               's'
+    shift, capslock:                    'S'
+    # This does not work in many apps nowadays (Android bug?),
+    # but on those apps the original SYM mapping just brings
+    # up the keyboard
+    # selection dialog which is arguably even worse.
+    alt:                                '\uef01'
+    ctrl, meta:                    none
+}
+
+key R {
+    label:                              'R'
+    base:                               'r'
+    shift, capslock:                    'R'
+    alt:                                '\u00ae'
+    ctrl, meta:                    none
+}
+
+key T {
+    label:                              'T'
+    base:                               't'
+    shift, capslock:                    'T'
+    alt:                                '\u2122'
+    ctrl, meta:                    none
+}
+
+key V {
+    label:                              'V'
+    base:                               'v'
+    shift, capslock:                    'V'
+    alt:                                '|'
+    ctrl, meta:                         none
+}
+
+key X {
+    label:                              'X'
+    base:                               'x'
+    shift, capslock:                    'X'
+    alt:                                '>'
+    ctrl, meta:                         none
+}
+
+key Y {
+    label:                              'Y'
+    base:                               'y'
+    shift, capslock:                    'Y'
+    alt:                                '\u00a5'
+    ctrl, meta:                    none
+}
+
+key Z {
+    label:                              'Z'
+    base:                               'z'
+    shift, capslock:                    'Z'
+    alt:                                '<'
+    ctrl, meta:                         none
+}
+
+key 0 {
+    label, number:                      '0'
+    base:                               '0'
+    shift:                              ')'
+    alt:                                ']'
+    ctrl,      meta:                    none
+}
+
+key 1 {
+    label, number:                      '1'
+    base:                               '1'
+    shift:                              '!'
+    alt:                                '\u00a7'
+    alt+shift:                          '\u00bd'
+    ctrl, meta:                    none
+}
+
+key 3 {
+    label, number:                      '3'
+    base:                               '3'
+    shift:                              '#'
+    alt:                                '\u00a3'
+    ctrl, meta:                    none
+}
+
+key 4 {
+    label, number:                      '4'
+    base:                               '4'
+    shift:                              '$'
+    alt:                                '\u00a4'
+    ctrl, meta:                    none
+}
+
+key 6 {
+    label, number:                      '6'
+    base:                               '6'
+    shift:                              '^'
+    alt:                                '~'
+    ctrl, meta:                    none
+}
+
+key 7 {
+    label, number:                      '7'
+    base:                               '7'
+    shift:                              '&'
+    alt:                                '{'
+    ctrl, meta:                         none
+}
+
+key 8 {
+    label, number:                      '8'
+    base:                               '8'
+    shift:                              '*'
+    alt:                                '}'
+    ctrl, meta:                         none
+}
+
+key 9 {
+    label, number:                      '9'
+    base:                               '9'
+    shift:                              '('
+    alt:                                '['
+    ctrl, meta:                         none
+}
+
+key COMMA {
+    label, number:                      ','
+    base:                               ','
+    shift:                              ';'
+    alt:                                '+'
+    ctrl, meta:                         none
+}
+
+key SLASH {
+    label, number:                      '/'
+    base:                               '/'
+    shift:                              '?'
+    alt:                                '\\'
+    ctrl, meta:                    none
+}
+
+key MINUS {
+    label, number:                      '-'
+    base:                               '-'
+    shift:                              '_'
+    alt:                                '='
+    ctrl, meta:                         none
+}
+
+key APOSTROPHE {
+    label, number:                      '\''
+    base:                               '\''
+    shift:                              '"'
+    alt:                                '\u0301'
+    alt+shift:                          '\u0300'
+    ctrl, meta:                    none
+}
+
+key SEMICOLON {
+    label:                              '\u00D6'
+    base:                               '\u00F6'
+    shift, capslock:                    '\u00D6'
+    ctrl, alt, meta:                    none
+}
+
+key EQUALS {
+    label:                              '\u00C4'
+    base:                               '\u00E4'
+    shift, capslock:                    '\u00C4'
+    alt:                                '\u00E5'
+    alt+shift, alt+capslock:            '\u00C5'
+    ctrl, meta:                         none
+}

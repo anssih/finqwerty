@@ -1,0 +1,10 @@
+/.idea
+/local.properties
+/projectFilesBackup
+*.apk
+*.iml
+*.swp
+.DS_Store
+.gradle
+build
+output.json

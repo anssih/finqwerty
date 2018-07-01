@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">FinQwerty European Layouts</string>
+
+    <string name="xt894_finnish_1" translatable="false">FinQwerty Droid 4, Motorola</string>
+    <string name="xt897_finnish_1" translatable="false">FinQwerty Photon Q, Motorola</string>
+    <string name="apexq_finnish_1" translatable="false">FinQwerty Galaxy S Relay 4G, Samsung</string>
+
+    <string name="priv_fin_1">FinQwerty BlackBerry Priv, Finnish</string>
+    <string name="priv_fin_2">FinQwerty BlackBerry Priv, Finnish 2</string>
+    <string name="priv_swe_1">FinQwerty BlackBerry Priv, Swedish</string>
+    <string name="priv_dan_1">FinQwerty BlackBerry Priv, Danish</string>
+    <string name="priv_nor_1">FinQwerty BlackBerry Priv, Norwegian</string>
+    <string name="priv_ger_1">FinQwerty BlackBerry Priv, German</string>
+
+    <string name="keyone_fin_1">FinQwerty BlackBerry KEYone, Finnish</string>
+    <string name="keyone_swe_1">FinQwerty BlackBerry KEYone, Swedish</string>
+    <string name="keyone_dan_1">FinQwerty BlackBerry KEYone, Danish</string>
+    <string name="keyone_nor_1">FinQwerty BlackBerry KEYone, Norwegian</string>
+    <string name="keyone_ger_1">FinQwerty BlackBerry KEYone, German</string>
+
+    <string name="gemini_fin_1">FinQwerty Gemini PDA, stock Finnish/Swedish with swapped Ä/Ö</string>
+
+    <string name="livmoto_fin_1">FinQwerty Livermorium Moto Mod, Finnish</string>
+    <string name="livmoto_swe_1">FinQwerty Livermorium Moto Mod, Swedish</string>
+    <string name="livmoto_dan_1">FinQwerty Livermorium Moto Mod, Danish</string>
+    <string name="livmoto_nor_1">FinQwerty Livermorium Moto Mod, Norwegian</string>
+    <string name="livmoto_ger_1">FinQwerty Livermorium Moto Mod, German</string>
+
+
+    <string name="title_activity_main" translatable="false">FinQwerty</string>
+
+    <string name="configure_help_semi"><![CDATA[You can configure your physical keyboard layout in the \"Language & input\" section of Android Settings, by selecting the first item under the \"Physical keyboard\" heading there.]]></string>
+    <string name="configure_button_text_semi">Language &amp; input settings</string>
+
+    <string name="configure_help_semi_imi"><![CDATA[You can configure your physical keyboard layout corresponding to each virtual keyboard in the Physical keyboard section of Android settings.]]></string>
+    <string name="configure_button_text_semi_imi">Physical keyboard settings</string>
+
+    <string name="configure_help_direct">Open the physical keyboard layout configuration dialog:</string>
+    <string name="configure_button_text_direct">Configure %s layout</string>
+    <string name="configure_button_text_direct_imi"><![CDATA[Configure %1$s layout when virtual keyboard \"%2$s\" is selected]]></string>
+
+    <string name="configure_help_fail">No physical keyboards were found. If you are using a Moto Mod keyboard, open the slider now to allow layout setup.</string>
+
+    <string name="hide_help_direct"><![CDATA[In most cases you can also change your physical keyboard layout via Android Settings in Language & input => Physical keyboard. If you use that method and want to hide FinQwerty from the application launcher, press the below button:]]></string>
+    <string name="hide_help_semi"><![CDATA[If you want to hide FinQwerty from the application launcher, press the below button:]]></string>
+    <string name="hide_button_text">Hide FinQwerty from launcher</string>
+    <string name="hide_help_below">This screen will close and FinQwerty is removed from the launcher (a reboot may be required for the removal to take effect). This screen can be reached again by removing and reinstalling FinQwerty.</string>
+
+    <string name="device_name_priv_qwerty">BlackBerry QWERTY keypad</string>
+    <string name="device_name_priv_azerty">BlackBerry AZERTY keypad</string>
+    <string name="device_name_priv_qwertz">BlackBerry QWERTZ keypad</string>
+    <string name="configure_help_below"><![CDATA[On the \"Choose keyboard layout\" dialog, press \"Setup keyboard layouts\" to open the full list of layouts. Select the FinQwerty layout appropriate for your device (FinQwerty layouts begin with \"FinQwerty\" in the alphabetical layout list) and then press the back button. Then select the FinQwerty layout you just added on the list.]]></string>
+    <string name="configure_help_below_imi"><![CDATA[The FinQwerty layouts begin with \"FinQwerty\" in the alphabetical layout list.]]></string>
+
+    <string name="main_text"><![CDATA[FinQwerty provides several European physical keyboard layouts for easier access to local characters. See below for instructions on how to configure your phone to use a FinQwerty keyboard layout. Detailed information about the provided keymaps is provided on <a href="%s">the FinQwerty website</a>.]]></string>
+
+    <string name="priv_help2"><![CDATA[Note that if you have the BlackBerry Keyboard software keyboard enabled with a non-English software layout, the physical keyboard layout may be reset frequently. To avoid that, configure the software keyboard to use the English (US) layout via Settings => Language & input => BlackBerry Keyboard Settings => Input languages => English (United States) (and deselect all the other languages).]]></string>
+
+    <string name="priv_help">Note that BlackBerry resets the keyboard layout to the original default on every boot. You will need to re-enable FinQwerty after every time the phone is restarted. Enable the below option to show a reconfiguration shortcut notification whenever the phone has been restarted so that you do not need to manually navigate to this app every time:</string>
+    <string name="boot_switch_text">Show a configuration shortcut notification when the phone has been restarted</string>
+    <string name="layout_boot_notification_title">Key layout re-setup required</string>
+    <string name="layout_boot_notification_text">Touch to open layout setup.</string>
+
+
+</resources>

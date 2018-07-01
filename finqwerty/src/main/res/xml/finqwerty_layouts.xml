@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<keyboard-layouts xmlns:android="http://schemas.android.com/apk/res/android">
+    <keyboard-layout android:name="xt894_finnish" android:label="@string/xt894_finnish_1" android:keyboardLayout="@raw/xt897_1"/>
+    <keyboard-layout android:name="xt897_finnish" android:label="@string/xt897_finnish_1" android:keyboardLayout="@raw/xt897_1"/>
+    <keyboard-layout android:name="apexq_finnish" android:label="@string/apexq_finnish_1" android:keyboardLayout="@raw/apexq_1"/>
+
+    <keyboard-layout android:name="priv_fin_1" android:label="@string/priv_fin_1" android:keyboardLayout="@raw/priv_fin_1"/>
+    <keyboard-layout android:name="priv_swe_1" android:label="@string/priv_swe_1" android:keyboardLayout="@raw/priv_swe_1"/>
+    <keyboard-layout android:name="priv_nor_1" android:label="@string/priv_nor_1" android:keyboardLayout="@raw/priv_nor_1"/>
+    <keyboard-layout android:name="priv_dan_1" android:label="@string/priv_dan_1" android:keyboardLayout="@raw/priv_dan_1"/>
+    <keyboard-layout android:name="priv_ger_1" android:label="@string/priv_ger_1" android:keyboardLayout="@raw/priv_ger_1"/>
+
+    <keyboard-layout android:name="keyone_fin_1" android:label="@string/keyone_fin_1" android:keyboardLayout="@raw/priv_fin_1"/>
+    <keyboard-layout android:name="keyone_swe_1" android:label="@string/keyone_swe_1" android:keyboardLayout="@raw/priv_swe_1"/>
+    <keyboard-layout android:name="keyone_nor_1" android:label="@string/keyone_nor_1" android:keyboardLayout="@raw/priv_nor_1"/>
+    <keyboard-layout android:name="keyone_dan_1" android:label="@string/keyone_dan_1" android:keyboardLayout="@raw/priv_dan_1"/>
+    <keyboard-layout android:name="keyone_ger_1" android:label="@string/keyone_ger_1" android:keyboardLayout="@raw/priv_ger_1"/>
+
+    <keyboard-layout android:name="gemini_fin_1" android:label="@string/gemini_fin_1" android:keyboardLayout="@raw/gemini_fin_1"/>
+
+    <keyboard-layout android:name="livmoto_fin_1" android:label="@string/livmoto_fin_1" android:keyboardLayout="@raw/livmoto_fin_1"/>
+    <keyboard-layout android:name="livmoto_swe_1" android:label="@string/livmoto_swe_1" android:keyboardLayout="@raw/livmoto_swe_1"/>
+    <keyboard-layout android:name="livmoto_nor_1" android:label="@string/livmoto_nor_1" android:keyboardLayout="@raw/livmoto_nor_1"/>
+    <keyboard-layout android:name="livmoto_dan_1" android:label="@string/livmoto_dan_1" android:keyboardLayout="@raw/livmoto_dan_1"/>
+    <keyboard-layout android:name="livmoto_ger_1" android:label="@string/livmoto_ger_1" android:keyboardLayout="@raw/livmoto_ger_1"/>
+
+</keyboard-layouts>

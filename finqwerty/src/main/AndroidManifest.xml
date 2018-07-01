@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="fi.onse.qwerty.finnish">
+
+    <!-- technically true, but we all keyboards we support are usable only
+	 touchscreen devices -->
+    <!-- <uses-feature android:name="android.hardware.touchscreen" android:required="false"/> -->
+    <!-- technically true, but would prevent installation on BlackBerry Priv
+	 for some reason. -->
+    <!-- uses-configuration android:reqHardKeyboard="true" android:reqKeyboardType="qwerty"/ -->
+
+    <!-- used by Priv workaround: -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name">
+        <receiver
+            android:name=".KeyboardLayoutsReceiver"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.hardware.input.action.QUERY_KEYBOARD_LAYOUTS" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.hardware.input.metadata.KEYBOARD_LAYOUTS"
+                android:resource="@xml/finqwerty_layouts" />
+        </receiver>
+
+        <receiver android:name=".PrivBootupNotification"
+            android:enabled="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

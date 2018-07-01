@@ -1,0 +1,111 @@
+###############
+#
+# Copyright (C) 2010 The Android Open Source Project
+# Copyright (C) 2014 Anssi Hannula
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#
+################
+
+type OVERLAY
+
+map key 217 APOSTROPHE
+map key 53 SEMICOLON
+
+# TODO check if this is actually needed
+map key 429 AT
+
+key SEMICOLON {
+    label:                              '\u00D6'
+    base:                               '\u00F6'
+    shift, capslock:                    '\u00D6'
+    alt: '?'
+    shift+alt, capslock+alt: '?'
+}
+
+key APOSTROPHE {
+    label:                              '\u00C4'
+    base:                               '\u00E4'
+    shift, capslock:                    '\u00C4'
+    alt:                                '\u00E5'
+    alt+shift, alt+capslock:            '\u00C5'
+}
+
+key AT {
+    base: fallback CONTACTS
+    shift, capslock: fallback CONTACTS
+    alt: fallback SEARCH
+    shift+alt, capslock+alt: fallback SEARCH
+}
+
+key Y {
+    label: 'Y'
+    number: '9'
+    base: 'y'
+    shift, capslock: 'Y'
+    alt: '\u00a7'
+    shift+alt, capslock+alt: '\u00a7'
+}
+key J {
+    label: 'J'
+    number: '5'
+    base: 'j'
+    shift, capslock: 'J'
+    alt: '\u00bd'
+    shift+alt, capslock+alt: '\u00bd'
+}
+
+key V {
+    label: 'V'
+    number: '8'
+    base: 'v'
+    shift, capslock: 'V'
+    alt: '\u0303'
+    shift+alt, capslock+alt: '\u0303'
+}
+
+key B {
+    label: 'B'
+    number: '2'
+    base: 'b'
+    shift, capslock: 'B'
+    alt: '\u0302'
+    shift+alt, capslock+alt: '\u0302'
+}
+
+key N {
+    label: 'N'
+    number: '6'
+    base: 'n'
+    shift, capslock: 'N'
+    alt: '\u0308'
+    shift+alt, capslock+alt: '\u0308'
+}
+
+key COMMA {
+    label: ','
+    number: ','
+    base: ','
+    shift: '?'
+    alt: '\uEF01'
+    shift+alt: '\uEF01'
+}
+
+key PERIOD {
+    label: '.'
+    number: '.'
+    base: '.'
+    shift: ':'
+    alt: '\uEF03'
+    shift+alt: '\uEF03'
+}

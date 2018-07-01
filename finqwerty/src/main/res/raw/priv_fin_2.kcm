@@ -1,0 +1,53 @@
+type OVERLAY
+
+# force qwerty on azerty/qwertz
+map key 16 Q
+map key 17 W
+map key 21 Y
+map key 30 A
+map key 44 Z
+
+# shift keys 42 and 54
+# right sym 100
+# left '0' 11, but search is set nowhere (?)
+
+# orig SYM
+map key 100 SEMICOLON
+# orig SHIFT_RIGHT
+#map key 54 SEMICOLON
+# orig 0
+map key 11 SYM
+
+key Q {
+    label:                   'Q'
+    base:                    'q'
+    shift, capslock:         'Q'
+    alt:                     '0'
+    sym:                     '~'
+}
+
+# previous dollar, now ä+å
+
+key 4 {
+    label:                   '\u00C4'
+    base:                    '\u00E4'
+    shift, capslock:         '\u00C4'
+    alt:                     '\u00E5'
+    alt+shift, alt+capslock: '\u00C5'
+    sym:                     '$'
+}
+
+
+# ö right shift, and speaker, and alt = $.
+# speaker could be on key 4 but lalt+lshift seems iffy
+
+key SEMICOLON {
+    label:                   '\u00D6'
+    base:                    '\u00F6'
+    shift, capslock:         '\u00D6'
+    alt:                     '#'
+    sym:                     '\u20AC'
+    lalt+lshift:             '\uE141'
+}
+
+#

@@ -1,0 +1,55 @@
+type OVERLAY
+
+# force qwerty on azerty/qwertz
+map key 16 Q
+map key 17 W
+map key 21 Y
+map key 30 A
+map key 44 Z
+
+# shift keys 42 and 54
+# right sym 100
+# left '0' 11, but search is set nowhere (?)
+
+# orig SYM
+map key 100 SEMICOLON
+# orig SHIFT_RIGHT
+map key 54 EQUALS
+# orig 0
+map key 11 SYM
+
+key Q {
+    label:                   'Q'
+    base:                    'q'
+    shift, capslock:         'Q'
+    alt:                     '0'
+    sym:                     '~'
+}
+
+
+# previous dollar
+
+key 4 {
+    label:                   '\u00C5'
+    base:                    '\u00E5'
+    shift, capslock:         '\u00C5'
+    alt:                     '$'
+    sym:                     '$'
+    lalt+lshift:             '\uE141'
+}
+
+key EQUALS {
+    label:                   '\u00D8'
+    base:                    '\u00F8'
+    shift, capslock:         '\u00D8'
+    alt:                     '\u20AC'
+}
+
+key SEMICOLON {
+    label:                   '\u00C6'
+    base:                    '\u00E6'
+    shift, capslock:         '\u00C6'
+    alt:                     '#'
+}
+
+#

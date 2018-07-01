@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FinQwerty - eurooppalaiset asettelut</string>
+    <string name="configure_button_text_direct">Valitse näppäimistön %s asettelu</string>
+    <string name="configure_button_text_semi">Asetukset - Kieli ja syöttötapa</string>
+    <string name="configure_help_below"><![CDATA[Valitse \"Valitse näppäimistöasettelu\"-ruudussa kohta \"Määritä näppäimistöasettelut\" avataksesi täyden asetteluluettelon. Valitse laitteellesi sopiva FinQwerty-asettelu (FinQwerty-asettelut alkavat \"FinQwerty\"-sanalla aakkosellisella luettelossa) ja paina takaisin-nappia. Tämän jälkeen valitse luettelosta siihen juuri lisäämäsi FinQwerty-asettelu.]]></string>
+    <string name="configure_help_direct">Avaa fyysisen näppäimistön asettelun valintaikkuna:</string>
+    <string name="configure_help_fail">Fyysisiä näppäimistöjä ei löytynyt. If you are using a Moto Mod keyboard, open the slider now to allow layout setup.</string>
+    <string name="configure_help_semi"><![CDATA[Voit asettaa fyysisen näppäimistön asettelun Androidin asetusten \"Kieli ja syöttötapa\"-valikon kautta valitsemalla sieltä ensimmäisen kohdan \"Fyysinen näppäimistö\"-otsikon alta.]]></string>
+    <string name="device_name_priv_azerty">BlackBerryn AZERTY-näppäimistö</string>
+    <string name="device_name_priv_qwerty">BlackBerryn QWERTY-näppäimistö</string>
+    <string name="device_name_priv_qwertz">BlackBerryn QWERTZ-näppäimistö</string>
+    <string name="hide_button_text">Piilota FinQwerty sovelluskäynnistimestä</string>
+    <string name="hide_help_below">Tämä sovellus sulkeutuu ja FinQwerty piilotetaan käynnistimestä (piilotuksen voimaantulo saattaa vaatia uudelleenkäynnistyksen). Pääset takaisin tähän ruutuun poistamalla FinQwertyn kokonaan ja asentamalla sen uudelleen.</string>
+    <string name="hide_help_direct"><![CDATA[Näppäimistöasettelun voi yleensä asettaa myös Androidin asetuksien kautta: Kieli ja syöttötapa => Fyysinen näppäimistö. Jos käytät tätä tapaa ja haluat piilottaa FinQwertyn sovelluskäynnistimestä, paina allaolevaa nappia:]]></string>
+    <string name="hide_help_semi"><![CDATA[Jos haluat piilottaa FinQwertyn sovelluskäynnistimestä, paina allaolevaa nappia:]]></string>
+    <string name="main_text"><![CDATA[FinQwerty tarjoaa useita eurooppalaisia näppäimistöasetteluita (ml. suomalaiset asettelut) ääkkösten käytön helpottamiseksi. FinQwertyn asetusohjeet näkyvät alla. Tarkemmat tiedot saatavilla olevista asetteluista löytyvät <a href="%s">FinQwertyn verkkosivulta</a>.]]></string>
+    <string name="priv_dan_1">FinQwerty Blackberry Priv, tanskalainen</string>
+    <string name="priv_fin_1">FinQwerty Blackberry Priv, suomalainen</string>
+    <string name="priv_fin_2">FinQwerty Blackberry Priv, suomalainen 2</string>
+    <string name="priv_ger_1">FinQwerty BlackBerry Priv, saksalainen</string>
+    <string name="priv_help">Huomaa, että BlackBerry palauttaa näppäimistöasettelun alkuperäiseksi jokaisella käynnityksellä. FinQwerty tulee siis asettaa uudelleen näppäimistön asetteluksi jokaisen uudelleenkäynnistyksen jälkeen. Ota käyttöön allaoleva asetus, jos haluat, että FinQwerty näyttää ilmoitusvalikossa pikavalinnan näppäimistöasetteluasetuksiin jokaisen käynnistyksen jälkeen, jotta sinun ei tarvitse erikseen käydä tässä sovelluksessa jokaisen uudelleenkäynnistyksen jälkeen:</string>
+    <string name="priv_nor_1">FinQwerty BlackBerry Priv, norjalainen</string>
+    <string name="priv_swe_1">FinQwerty BlackBerry Priv, ruotsalainen</string>
+    <string name="layout_boot_notification_title">Näppäinasettelun uudelleenmääritys</string>
+    <string name="layout_boot_notification_text">Valitse avataksesi asetteluvalintaikkunan.</string>
+    <string name="boot_switch_text">Näytä ilmoitus näppäimistöasettelun uudelleenasettamista varten puhelimen uudelleenkäynnistyksen jälkeen</string>
+    <string name="keyone_dan_1">FinQwerty Blackberry KEYone, tanskalainen</string>
+    <string name="keyone_fin_1">FinQwerty BlackBerry KEYone, suomalainen</string>
+    <string name="keyone_ger_1">FinQwerty BlackBerry KEYone, saksalainen</string>
+    <string name="keyone_nor_1">FinQwerty BlackBerry KEYone, norjalainen</string>
+    <string name="keyone_swe_1">FinQwerty BlackBerry KEYone, ruotsalainen</string>
+    <string name="priv_help2"><![CDATA[Huomaa, että \"BlackBerry-näppäimistö\"-virtuaalinäppäimistö saattaa ajoittain palauttaa fyysisen näppäimistön asettelun alkuperäiseksi, jos virtuaalinäppäimistön asettelu on muu kuin englanti (Yhdysvallat). Jos kyseinen virtuaalinäppäimistö on käytössä (oletus), aseta se käyttämään Yhdysvaltojen englantia: Asetukset => Kieli ja Syöttötapa => BlackBerry-näppäimistön asetukset => Syöttökielet => englanti (Yhdysvallat) (ja poista kaikki muut kielet käytöstä).]]></string>
+    <string name="configure_button_text_direct_imi"><![CDATA[Valitse näppäimistön %1$s asettelu kun virtuaalinäppäimistö "%2$s" on käytössä]]></string>
+    <string name="configure_button_text_semi_imi">Fyysisen näppäimistön asetukset</string>
+    <string name="configure_help_below_imi"><![CDATA[FinQwerty-asettelut alkavat "FinQwerty"-sanalla aakkosellisella luettelossa.]]></string>
+    <string name="configure_help_semi_imi"><![CDATA[Voit asettaa fyysisen näppäimistön asettelun eri virtuaalinäppäimistöille Androidin asetusten Fyysinen näppäimistö -kohdasta.]]></string>
+    <string name="livmoto_dan_1">FinQwerty Livermorium Moto Mod, tanskalainen</string>
+    <string name="livmoto_fin_1">FinQwerty Livermorium Moto Mod, suomalainen</string>
+    <string name="livmoto_ger_1">FinQwerty Livermorium Moto Mod, saksalainen</string>
+    <string name="livmoto_nor_1">FinQwerty Livermorium Moto Mod, norjalainen</string>
+    <string name="livmoto_swe_1">FinQwerty Livermorium Moto Mod, ruotsalainen</string>
+    <string name="gemini_fin_1">FinQwerty Gemini PDA, alkuperäinen suomalainen Ä/Ö vaihdettuna</string>
+
+</resources>
