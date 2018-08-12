@@ -47,7 +47,7 @@ key 3 {
 key 4 {
     label:                              '4'
     base:                               '4'
-    shift:                              '\u00a4'
+    shift:                              '~'
     fn:                                 '$'
     alt:                                '$'
 }
