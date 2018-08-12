@@ -229,6 +229,19 @@ public class MainActivity extends Activity {
                     setBootNotificationEnabled(isChecked);
                 }
             });
+
+            if (Build.VERSION.SDK_INT >= 24) {
+                /* e.g. BlackBerry KEYone or KEY2 */
+                TextView directHelpView = (TextView)findViewById(R.id.configure_help_textview_direct);
+                final String keyOneMessage = String.format("<span style=\"color: #ff0000;\">%s</span><br><a href=\"%s\">%s</a><br>",
+                        getText(R.string.configure_help_keyone).toString(),
+                        getText(R.string.configure_help_keyone_url).toString(),
+                        getText(R.string.more_information).toString());
+                directHelpView.setText(Html.fromHtml(keyOneMessage, 0));
+                directHelpView.setTextSize(19);
+                directHelpView.setMovementMethod(LinkMovementMethod.getInstance());
+            }
+
         } else {
             privLayout.setVisibility(View.GONE);
             privLayout2.setVisibility(View.GONE);

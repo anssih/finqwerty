@@ -7,6 +7,9 @@
     <string name="configure_help_direct">Avaa fyysisen näppäimistön asettelun valintaikkuna:</string>
     <string name="configure_help_fail">Fyysisiä näppäimistöjä ei löytynyt. If you are using a Moto Mod keyboard, open the slider now to allow layout setup.</string>
     <string name="configure_help_semi"><![CDATA[Voit asettaa fyysisen näppäimistön asettelun Androidin asetusten \"Kieli ja syöttötapa\"-valikon kautta valitsemalla sieltä ensimmäisen kohdan \"Fyysinen näppäimistö\"-otsikon alta.]]></string>
+    <string name="configure_help_keyone">Huomaa, että FinQwerty ei toimi Android 8 Oreo -päivitetyissä BlackBerry-laitteissa!</string>
+    <string name="configure_help_keyone_url">https://android.onse.fi/finqwerty/keyone_oreo_fi</string>
+    <string name="more_information">Lisätietoja</string>
     <string name="device_name_priv_azerty">BlackBerryn AZERTY-näppäimistö</string>
     <string name="device_name_priv_qwerty">BlackBerryn QWERTY-näppäimistö</string>
     <string name="device_name_priv_qwertz">BlackBerryn QWERTZ-näppäimistö</string>

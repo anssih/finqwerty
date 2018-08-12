@@ -40,6 +40,9 @@
     <string name="configure_button_text_direct_imi"><![CDATA[Configure %1$s layout when virtual keyboard \"%2$s\" is selected]]></string>
 
     <string name="configure_help_fail">No physical keyboards were found. If you are using a Moto Mod keyboard, open the slider now to allow layout setup.</string>
+    <string name="configure_help_keyone">Note that FinQwerty does not work on Android 8 Oreo on BlackBerry phones!</string>
+    <string name="configure_help_keyone_url">https://android.onse.fi/finqwerty/keyone_oreo</string>
+    <string name="more_information">More information</string>
 
     <string name="hide_help_direct"><![CDATA[In most cases you can also change your physical keyboard layout via Android Settings in Language & input => Physical keyboard. If you use that method and want to hide FinQwerty from the application launcher, press the below button:]]></string>
     <string name="hide_help_semi"><![CDATA[If you want to hide FinQwerty from the application launcher, press the below button:]]></string>

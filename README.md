@@ -2,7 +2,7 @@
 
 Various keyboard layouts for the physical QWERTY keyboards of the following slider Android phones:
 
-- BlackBerry KEYone (Danish, Finnish, German, Norwegian, Swedish)
+- BlackBerry KEYone **Android 7.1 only** (Danish, Finnish, German, Norwegian, Swedish)
 - BlackBerry Priv (Danish, Finnish, German, Norwegian, Swedish)
 - Gemini PDA (Finnish, Swedish)
 - Livermorium Keyboard Moto Mod (Danish, Finnish, German, Norwegian, Swedish)
