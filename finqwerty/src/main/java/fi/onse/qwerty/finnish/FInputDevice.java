@@ -4,12 +4,14 @@ package fi.onse.qwerty.finnish;
 
 import android.content.Context;
 import android.content.res.Resources;
-import android.hardware.input.InputDeviceIdentifier;
 import android.hardware.input.InputManager;
 import android.os.Build;
+import android.os.Parcelable;
 import android.util.ArrayMap;
+import android.util.Log;
 import android.view.InputDevice;
 
+import java.lang.reflect.Constructor;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashMap;
@@ -19,6 +21,8 @@ import java.util.Map;
 import static android.view.InputDevice.KEYBOARD_TYPE_ALPHABETIC;
 
 class FInputDevice {
+
+    private static final String TAG = "FInputDevice";
 
     private Map<String, String> niceNames;
 
@@ -75,8 +79,21 @@ class FInputDevice {
         isPriv = privDevices.contains(name);
     }
 
-    public InputDeviceIdentifier getIdentifier() {
-        return new InputDeviceIdentifier(descriptor, vendorId, productId);
+    public Parcelable getIdentifier() {
+        try {
+            /*
+             * Find the class via reflection to avoid non-SDK interface warning on Android 9
+             * unless this function is *actually* called.
+             */
+            Class<?> idicls = Class.forName("android.hardware.input.InputDeviceIdentifier");
+            Constructor idictr = idicls.getDeclaredConstructor(String.class, int.class, int.class);
+            return (Parcelable)idictr.newInstance(descriptor, vendorId, productId);
+
+        } catch (Exception e) {
+            // TODO handle exceptions properly
+            Log.e(TAG, "Exception: " + e.toString());
+            return null;
+        }
     }
 
     String displayName;
