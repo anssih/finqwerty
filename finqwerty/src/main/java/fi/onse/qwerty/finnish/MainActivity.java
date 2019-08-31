@@ -36,8 +36,8 @@ public class MainActivity extends Activity {
     /* physical layout configuration setting is specific to each software input method */
     public static final int directModeMinImiSDK = 24;
     /* maximum SDK where opening the keyboard layout configuration directly (which is
-     *  not an official API) has been confirmed to work */
-    private static final int directModeMaxSafeSDK = 27;
+     * not an official API) works */
+    private static final int directModeMaxSDK = 27;
     /* separate physical keyboard settings activity (settings not directly in input
      * method settings) */
     private static final int semiModeHardKeybMinSDK = 24;
@@ -89,9 +89,7 @@ public class MainActivity extends Activity {
         mainTextView.setMovementMethod(LinkMovementMethod.getInstance());
         mainTextView.setText(Html.fromHtml(String.format(getText(R.string.main_text).toString(), "http://android.onse.fi/finqwerty/")));
 
-        /* if there are known hidden devices, force direct mode regardless of whether it is
-         * confirmed safe or not as the layouts are not otherwise accessible (on Priv) */
-        boolean directMode = Build.VERSION.SDK_INT >= directModeMinSDK && (hiddenDevices || Build.VERSION.SDK_INT <= directModeMaxSafeSDK);
+        boolean directMode = Build.VERSION.SDK_INT >= directModeMinSDK && Build.VERSION.SDK_INT <= directModeMaxSDK;
 
         // directMode = false;
 
