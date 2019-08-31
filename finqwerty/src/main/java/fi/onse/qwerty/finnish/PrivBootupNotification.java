@@ -28,6 +28,10 @@ public class PrivBootupNotification extends BroadcastReceiver {
             return;
         }
 
+        if (!Intent.ACTION_BOOT_COMPLETED.equals(intent.getAction())) {
+            return;
+        }
+
         /* TODO: duplicates MainActivity.java */
         InputManager inputManager = (InputManager) context.getSystemService(context.INPUT_SERVICE);
 
