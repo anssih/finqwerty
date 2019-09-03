@@ -1,6 +1,6 @@
 # FinQwerty
 
-Various keyboard layouts for the physical QWERTY keyboards of the following slider Android phones:
+Various keyboard layouts for the physical QWERTY keyboards of the following Android phones:
 
 - BlackBerry KEYone **Android 7.1 only** (Danish, Finnish, German, Norwegian, Swedish)
 - BlackBerry Priv (Danish, Finnish, German, Norwegian, Swedish)
