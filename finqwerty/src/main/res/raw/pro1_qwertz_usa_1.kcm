@@ -39,6 +39,9 @@ map key 50 COMMA
 map key 51 PERIOD
 map key 52 SLASH
 
+# orig BACK
+map key 158 ESCAPE
+
 key ESCAPE {
     base:                               fallback BACK
     fn:                                 fallback HOME
