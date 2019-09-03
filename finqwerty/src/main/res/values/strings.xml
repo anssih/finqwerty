@@ -36,6 +36,8 @@
     <string name="pro1_qwertz_swe_1">FinQwerty F(x)tec Pro1, Swedish based on stock QWERTZ</string>
     <string name="pro1_qwertz_usa_1">FinQwerty F(x)tec Pro1, U.S. based on stock QWERTZ</string>
 
+    <string name="empty_layout">FinQwerty None (stock layout)</string>
+
     <string name="title_activity_main" translatable="false">FinQwerty</string>
 
     <string name="configure_help_semi"><![CDATA[You can configure your physical keyboard layout in the \"Language & input\" section of Android Settings, by selecting the first item under the \"Physical keyboard\" heading there.]]></string>
