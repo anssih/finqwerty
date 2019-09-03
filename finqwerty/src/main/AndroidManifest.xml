@@ -18,7 +18,7 @@
         android:label="@string/app_name">
         <receiver
             android:name=".KeyboardLayoutsReceiver"
-            android:label="@string/app_name">
+            android:label="@string/title_activity_main">
             <intent-filter>
                 <action android:name="android.hardware.input.action.QUERY_KEYBOARD_LAYOUTS" />
             </intent-filter>
