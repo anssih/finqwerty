@@ -1,0 +1,201 @@
+type OVERLAY
+
+# both yellow-arrow keys are 464 (FUNCTION)
+
+# orig FORWARD_DEL
+#map key 111 PLUS
+
+# orig EQUALS
+#map key 13 FORWARD_DEL
+
+# orig BACK
+map key 158 ESCAPE
+
+# ROW 1
+
+key ESCAPE {
+    base:                               fallback BACK
+    fn:                                 fallback HOME
+}
+
+# scandic shift+number
+key 2 {
+    label, base:                        '2'
+    shift:                              '"'
+    fn:                                 '@'
+}
+
+key 6 {
+    label, base:                        '6'
+    shift:                              '&'
+    fn:                                 '^'
+}
+
+key 7 {
+    label, base:                        '7'
+    shift:                              '/'
+    fn:                                 '&'
+}
+
+key 8 {
+    label, base:                        '8'
+    shift:                              '('
+    fn:                                 '*'
+}
+
+key 9 {
+    label, base:                        '9'
+    shift:                              ')'
+    fn:                                 '('
+}
+
+key 0 {
+    label, base:                        '0'
+    shift:                              '='
+    fn:                                 ')'
+}
+
+key MINUS {
+    label, base:                        '-'
+    shift:                              '?'
+    fn:                                 '_'
+}
+
+
+# ROW 2
+
+# replace ` with '
+key GRAVE {
+    label:                              '\u0027'
+    base:                               '\u0027'
+    shift, fn:                          '~'
+}
+
+# add ´
+key Q {
+    label:                              'Q'
+    base:                               'q'
+    shift, capslock:                    'Q'
+    fn:                                 '\u0300'
+}
+
+# add `
+key W {
+    label:                              'W'
+    base:                               'w'
+    shift, capslock:                    'W'
+    fn:                                 '\u0301'
+}
+
+# add euro
+key E {
+    label:                              'E'
+    base:                               'e'
+    shift, capslock:                    'E'
+    fn:                                 '\u20ac'
+}
+
+# add ~
+key Y {
+    label:                              'Y'
+    base:                               'y'
+    shift, capslock:                    'Y'
+    fn:                                 '\u0303'
+}
+
+# add ^
+key U {
+    label:                              'U'
+    base:                               'u'
+    shift, capslock:                    'U'
+    fn:                                 '\u0302'
+}
+
+# add ¨
+key I {
+    label:                              'I'
+    base:                               'i'
+    shift, capslock:                    'I'
+    fn:                                 '\u0308'
+}
+
+key SEMICOLON {
+    label:                              '\u00c4'
+    base:                               '\u00e4'
+    shift, capslock:                    '\u00c4'
+    fn:                                 ':'
+}
+
+
+# ROW 3
+
+key H {
+    label:                              'H'
+    base:                               'h'
+    shift, capslock:                    'H'
+    fn:                                 '\u00bd'
+}
+
+
+# ö
+key APOSTROPHE {
+    label:                              '\u00d6'
+    base:                               '\u00f6'
+    shift, capslock:                    '\u00d6'
+    fn:                                 '"'
+}
+
+# ROW 4
+
+key M {
+    label:                              'M'
+    base:                               'm'
+    shift, capslock:                    'M'
+    fn:                                 '\u00b5'
+}
+
+# add ;
+key COMMA {
+    label:                              ','
+    base:                               ','
+    shift:                              ';'
+    fn:                                 '<'
+}
+
+# add :
+key PERIOD {
+    label:                              '.'
+    base:                               '.'
+    shift:                              ':'
+    fn:                                 '>'
+}
+
+# stock fixups for missing shift+X
+key LEFT_BRACKET {
+    label, base:                        '['
+    shift, fn:                          '{'
+}
+key RIGHT_BRACKET {
+    label, base:                        ']'
+    shift, fn:                          '}'
+}
+key BACKSLASH {
+    label, base:                        '\u005c'
+    shift, fn:                          '|'
+}
+key 1 {
+    label, base:                        '1'
+    shift, fn:                          '!'
+}
+key 3 {
+    label, base:                        '3'
+    shift, fn:                          '#'
+}
+key 4 {
+    label, base:                        '4'
+    shift, fn:                          '$'
+}
+key 5 {
+    label, base:                        '5'
+    shift, fn:                          '%'
+}
