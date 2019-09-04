@@ -199,3 +199,11 @@ key 5 {
     label, base:                        '5'
     shift, fn:                          '%'
 }
+
+key O {
+    label:                              'O'
+    base:                               'o'
+    shift, capslock:                    'O'
+    fn:                                 '\u00e5'
+    fn+shift, fn+capslock:              '\u00c5'
+}
