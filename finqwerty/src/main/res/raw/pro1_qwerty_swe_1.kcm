@@ -138,6 +138,14 @@ key PLUS {
 
 # ROW 3
 
+key S {
+    label:                              'S'
+    base:                               's'
+    shift, capslock:                    'S'
+    fn:                                 '\u00df'
+    fn+shift, fn+capslock:              '\u1e9e'
+}
+
 key H {
     label:                              'H'
     base:                               'h'
