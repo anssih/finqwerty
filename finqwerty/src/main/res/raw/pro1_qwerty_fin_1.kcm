@@ -95,28 +95,20 @@ key E {
     fn:                                 '\u20ac'
 }
 
-# add ~
-key Y {
-    label:                              'Y'
-    base:                               'y'
-    shift, capslock:                    'Y'
-    fn:                                 '\u0303'
-}
-
-# add ^
+# add ¨
 key U {
     label:                              'U'
     base:                               'u'
     shift, capslock:                    'U'
-    fn:                                 '\u0302'
+    fn:                                 '\u0308'
 }
 
-# add ¨
+# add ^
 key I {
     label:                              'I'
     base:                               'i'
     shift, capslock:                    'I'
-    fn:                                 '\u0308'
+    fn:                                 '\u0302'
 }
 
 key SEMICOLON {
@@ -154,6 +146,14 @@ key APOSTROPHE {
 }
 
 # ROW 4
+
+# add ~
+key N {
+    label:                              'N'
+    base:                               'n'
+    shift, capslock:                    'N'
+    fn:                                 '\u0303'
+}
 
 key M {
     label:                              'M'
