@@ -1,0 +1,329 @@
+###############################################################
+#                                                             #
+# Slovak (QWERTY) layout                                      #
+# based on http://ascii-table.com/keyboard.php/245            #
+#                                                             #
+###############################################################
+
+type OVERLAY
+
+# both yellow-arrow keys are 464 (FUNCTION)
+
+#map key 12 PLUS (EQUALS?)
+#map key 13 GRAVE
+map key 111 PLUS
+
+map key 41 Q
+map key 16 W
+map key 17 E
+map key 18 R
+map key 19 T
+map key 20 Y
+map key 21 U
+map key 22 I
+map key 23 O
+map key 24 P
+map key 38 SEMICOLON
+
+map key 26 BACKSLASH
+map key 43 A
+map key 30 S
+map key 31 D
+map key 32 F
+map key 33 G
+map key 34 H
+map key 35 J
+map key 36 K
+map key 37 L
+map key 40 APOSTROPHE
+
+map key 25 LEFT_BRACKET
+map key 39 RIGHT_BRACKET
+map key 27 Z
+map key 44 X
+map key 45 C
+map key 46 V
+map key 47 B
+map key 48 N
+map key 49 M
+map key 50 COMMA
+map key 51 PERIOD
+map key 52 SLASH
+
+# orig BACK
+#map key 158 ESCAPE
+
+key GRAVE {
+    label, base:                        ';' # ;
+    shift, fn:                          '\u030a' # °
+}
+
+key 1 {
+    label, base:                        '+'
+    shift:                              '1'
+    fn:                                 '~'
+}
+key 2 {
+    label, base:                        '\u013e' # ľ
+    shift:                              '2'
+    capslock:                           '\u013d' # Ľ
+    fn:                                 '\u030c' # ˇ
+}
+key 3 {
+    label, base:                        '\u0161' # š
+    shift:                              '3'
+    capslock:                           '\u0160' # Š
+    fn:                                 '\u0302' # ^
+}
+key 4 {
+    label, base:                        '\u010b' # č
+    shift:                              '4'
+    capslock:                           '\u010c' # Č
+    fn:                                 '\u0306' # ˘
+}
+key 5 {
+    label, base:                        '\u0165' # ť
+    shift:                              '5'
+    capslock:                           '\u0164' # Ť
+    fn:                                 '\u030a' # °
+}
+key 6 {
+    label, base:                        '\u017e' # ž
+    shift:                              '6'
+    capslock:                           '\u017d' # Ž
+    fn:                                 '\u0328' # ˛
+}
+key 7 {
+    label, base:                        '\u00fd' # ý
+    shift:                              '7'
+    capslock:                           '\u00dd' # Ý
+    fn:                                 '\u0060' # `
+}
+key 8 {
+    label, base:                        '\u00e1' # á
+    shift:                              '8'
+    capslock:                           '\u00c1' # Á
+    fn:                                 '\u0307' # ˙
+}
+key 9 {
+    label, base:                        '\u00ed' # í
+    shift:                              '9'
+    capslock:                           '\u00cd' # Í
+    fn:                                 '\u0027' # ´
+}
+key 0 {
+    label, base:                        '\u00e9' # é
+    shift:                              '0'
+    capslock:                           '\u00c9' # É
+    fn:                                 '\u030b' # ˝
+}
+key MINUS {
+    label, base:                        '='
+    shift:                              '%'
+    fn:                                 '\u308' # ¨
+}
+key EQUALS {
+    label:                              '\u030c' # ´
+    base:                               '\u030c' # ´
+    shift:                              '\u0301' # ˇ
+    fn:                                 '\u0327' # ¸
+}
+
+# ROW 2
+
+key Q {
+    label:                              'Q'
+    base:                               'q'
+    shift, capslock:                    'Q'
+    fn:                                 '\'
+}
+
+key W {
+    label:                              'W'
+    base:                               'w'
+    shift, capslock:                    'W'
+    fn:                                 '|'
+}
+
+key E {
+    label:                              'E'
+    base:                               'e'
+    shift, capslock:                    'E'
+    fn:                                 '\u20ac' # €
+}
+
+key R {
+    label:                              'R'
+    base:                               'r'
+    shift, capslock:                    'R'
+}
+
+key U {
+    label:                              'U'
+    base:                               'u'
+    shift, capslock:                    'U'
+}
+
+key I {
+    label:                              'I'
+    base:                               'i'
+    shift, capslock:                    'I'
+}
+
+key O {
+    label:                              'O'
+    base:                               'o'
+    shift, capslock:                    'O'
+}
+
+key P {
+    label:                              'P'
+    base:                               'p'
+    shift, capslock:                    'P'
+}
+
+key LEFT_BRACKET { 
+    label:                              '\u00fa' # ú
+    base:                               '\u00fa' # ú
+    shift:                              '/'
+    capslock:		                    '\u00c5' # Ú
+    fn:                                 '\u00f7' # ÷
+}
+
+key APOSTROPHE {
+    label:                              '\u00a7' # §
+    base:                               '\u00a7 # §
+    shift:                              '!'  # !
+    capslock:                           '\u00a7'  # §
+    fn:                                 '\u00df'  # ß
+}
+
+# ROW 3
+
+key A {
+    label:                              'A'
+    base:                               'a'
+    shift, capslock:                    'A'
+}
+
+key S {
+    label:                              'S'
+    base:                               's'
+    shift, capslock:                    'S'
+    fn:                                 '\u0111' # đ
+}
+
+key D {
+    label:                              'D'
+    base:                               'd'
+    shift, capslock:                    'D'
+    fn:                                 '\u00d0' # Đ
+}
+
+key F {
+    label:                              'F'
+    base:                               'f'
+    shift, capslock:                    'F'
+    fn:                                 '['
+}
+
+key G {
+    label:                              'G'
+    base:                               'g'
+    shift, capslock:                    'G'
+    fn:                                 ']'
+}
+
+# H, J no change
+
+key K {
+    label:                              'K'
+    base:                               'k'
+    shift, capslock:                    'K'
+    fn:                                 '\u0142' # ł
+}
+
+key L {
+    label:                              'L'
+    base:                               'l'
+    shift, capslock:                    'L'
+    fn:                                 '\u0141' # Ł
+}
+
+key SEMICOLON {
+    label:                              '\u00f4' # ô
+    base:                               '\u00f4' # ô
+    shift, capslock:                    '"'
+    fn:                                 '\u0024' # $
+}
+
+# æ
+key BACKSLASH {
+    label:                              '\u0148' # ň
+    base:                               '\u0148' # ň
+    shift, capslock:                    ')'
+    fn:                                 '\u00a4' # ¤
+}
+
+# ROW 4
+
+key SLASH {
+    label, base:                        '<'
+    shift, fn:                          '>'
+}
+
+key Z {
+    label:                              'Z'
+    base:                               'z'
+    shift, capslock:                    'Z'
+    fn:                                 '>'
+}
+
+key X {
+    label:                              'X'
+    base:                               'x'
+    shift, capslock:                    'X'
+    fn:                                 '#'
+}
+
+# C no change
+
+key V {
+    label:                              'V'
+    base:                               'v'
+    shift, capslock:                    'V'
+    fn:                                 '@'
+}
+
+key B {
+    label:                              'B'
+    base:                               'b'
+    shift, capslock:                    'B'
+    fn:                                 '{'
+}
+
+key N {
+    label:                              'N'
+    base:                               'n'
+    shift, capslock:                    'N'
+    fn:                                 '}'
+}
+
+# M no change
+
+key COMMA {
+    label:                              ','
+    base:                               ','
+    shift, fn:                          '?'
+}
+
+key PERIOD {
+    label:                              '.'
+    base:                               '.'
+    shift, fn:                          ':'
+}
+
+key ESCAPE {
+    base:                               fallback BACK
+    fn:                                 fallback HOME
+}
