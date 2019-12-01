@@ -90,8 +90,8 @@ key PLUS {
     shift, fn:                          '?'
 }
 key GRAVE {
-    label, base:                        '\u0300'
-    shift, fn:                          '\u0301'
+    label, base:                        '\u0301'
+    shift, fn:                          '\u0300'
 }
 
 # ROW 2
