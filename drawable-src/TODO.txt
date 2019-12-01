@@ -1,2 +1,1 @@
-- more appropriate artwork (we have non-Finnish layouts too...)
 - integrate into build process
