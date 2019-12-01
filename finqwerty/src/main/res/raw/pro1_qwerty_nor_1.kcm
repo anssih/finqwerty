@@ -135,7 +135,7 @@ key S {
     base:                               's'
     shift, capslock:                    'S'
     fn:                                 '\u00df'
-    fn+shift, fn+capslock:              '\u1e9e'
+    fn+shift, fn+capslock, fn+ctrl:     '\u1e9e'
 }
 
 key H {

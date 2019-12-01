@@ -126,7 +126,7 @@ key S {
     base:                               's'
     shift, capslock:                    'S'
     fn:                                 '\u00df'
-    fn+shift, fn+capslock:              '\u1e9e'
+    fn+shift, fn+capslock, fn+ctrl:     '\u1e9e'
 }
 
 key H {
@@ -213,5 +213,5 @@ key O {
     base:                               'o'
     shift, capslock:                    'O'
     fn:                                 '\u00e5'
-    fn+shift, fn+capslock:              '\u00c5'
+    fn+shift, fn+capslock, fn+ctrl:     '\u00c5'
 }
