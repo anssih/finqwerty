@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">FinQwerty - eurooppalaiset asettelut</string>
+    <string name="app_name">FinQwerty-näppäimistöasettelut</string>
     <string name="configure_button_text_direct">Valitse näppäimistön %s asettelu</string>
     <string name="configure_button_text_semi">Asetukset - Kieli ja syöttötapa</string>
     <string name="configure_help_below"><![CDATA[Valitse \"Valitse näppäimistöasettelu\"-ruudussa kohta \"Määritä näppäimistöasettelut\" avataksesi täyden asetteluluettelon. Valitse laitteellesi sopiva FinQwerty-asettelu (FinQwerty-asettelut alkavat \"FinQwerty\"-sanalla aakkosellisella luettelossa) ja paina takaisin-nappia. Tämän jälkeen valitse luettelosta siihen juuri lisäämäsi FinQwerty-asettelu.]]></string>
@@ -17,7 +17,7 @@
     <string name="hide_help_below">Tämä sovellus sulkeutuu ja FinQwerty piilotetaan käynnistimestä (piilotuksen voimaantulo saattaa vaatia uudelleenkäynnistyksen). Pääset takaisin tähän ruutuun poistamalla FinQwertyn kokonaan ja asentamalla sen uudelleen.</string>
     <string name="hide_help_direct"><![CDATA[Näppäimistöasettelun voi yleensä asettaa myös Androidin asetuksien kautta: Kieli ja syöttötapa => Fyysinen näppäimistö. Jos käytät tätä tapaa ja haluat piilottaa FinQwertyn sovelluskäynnistimestä, paina allaolevaa nappia:]]></string>
     <string name="hide_help_semi"><![CDATA[Jos haluat piilottaa FinQwertyn sovelluskäynnistimestä, paina allaolevaa nappia:]]></string>
-    <string name="main_text"><![CDATA[FinQwerty tarjoaa useita eurooppalaisia näppäimistöasetteluita (ml. suomalaiset asettelut) ääkkösten käytön helpottamiseksi. FinQwertyn asetusohjeet näkyvät alla. Tarkemmat tiedot saatavilla olevista asetteluista löytyvät <a href="%s">FinQwertyn verkkosivulta</a>.]]></string>
+    <string name="main_text"><![CDATA[FinQwerty tarjoaa useita näppäimistöasetteluita (ml. suomalaiset asettelut) ääkkösten käytön helpottamiseksi. FinQwertyn asetusohjeet näkyvät alla. Tarkemmat tiedot saatavilla olevista asetteluista löytyvät <a href="%s">FinQwertyn verkkosivulta</a>.]]></string>
     <string name="priv_dan_1">FinQwerty Blackberry Priv, tanskalainen</string>
     <string name="priv_fin_1">FinQwerty Blackberry Priv, suomalainen</string>
     <string name="priv_fin_2">FinQwerty Blackberry Priv, suomalainen 2</string>

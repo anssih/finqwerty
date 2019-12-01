@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">FinQwerty European Layouts</string>
+    <string name="app_name">FinQwerty Keyboard Layouts</string>
 
     <string name="xt894_finnish_1" translatable="false">FinQwerty Droid 4, Motorola</string>
     <string name="xt897_finnish_1" translatable="false">FinQwerty Photon Q, Motorola</string>
@@ -66,7 +66,7 @@
     <string name="configure_help_below"><![CDATA[On the \"Choose keyboard layout\" dialog, press \"Setup keyboard layouts\" to open the full list of layouts. Select the FinQwerty layout appropriate for your device (FinQwerty layouts begin with \"FinQwerty\" in the alphabetical layout list) and then press the back button. Then select the FinQwerty layout you just added on the list.]]></string>
     <string name="configure_help_below_imi"><![CDATA[The FinQwerty layouts begin with \"FinQwerty\" in the alphabetical layout list.]]></string>
 
-    <string name="main_text"><![CDATA[FinQwerty provides several European physical keyboard layouts for easier access to local characters. See below for instructions on how to configure your phone to use a FinQwerty keyboard layout. Detailed information about the provided keymaps is provided on <a href="%s">the FinQwerty website</a>.]]></string>
+    <string name="main_text"><![CDATA[FinQwerty provides several physical keyboard layouts for easier access to local characters. See below for instructions on how to configure your phone to use a FinQwerty keyboard layout. Detailed information about the provided keymaps is provided on <a href="%s">the FinQwerty website</a>.]]></string>
 
     <string name="priv_help2"><![CDATA[Note that if you have the BlackBerry Keyboard software keyboard enabled with a non-English software layout, the physical keyboard layout may be reset frequently. To avoid that, configure the software keyboard to use the English (US) layout via Settings => Language & input => BlackBerry Keyboard Settings => Input languages => English (United States) (and deselect all the other languages).]]></string>
 
