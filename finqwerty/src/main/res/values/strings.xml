@@ -26,15 +26,15 @@
     <string name="livmoto_nor_1">FinQwerty Livermorium Moto Mod, Norwegian</string>
     <string name="livmoto_ger_1">FinQwerty Livermorium Moto Mod, German</string>
 
-    <string name="pro1_qwerty_dan_1">FinQwerty F(x)tec Pro1, Danish based on stock QWERTY</string>
-    <string name="pro1_qwerty_fin_1">FinQwerty F(x)tec Pro1, Finnish based on stock QWERTY</string>
-    <string name="pro1_qwerty_nor_1">FinQwerty F(x)tec Pro1, Norwegian based on stock QWERTY</string>
-    <string name="pro1_qwerty_swe_1">FinQwerty F(x)tec Pro1, Swedish based on stock QWERTY</string>
-    <string name="pro1_qwertz_dan_1">FinQwerty F(x)tec Pro1, Danish based on stock QWERTZ</string>
-    <string name="pro1_qwertz_fin_1">FinQwerty F(x)tec Pro1, Finnish based on stock QWERTZ</string>
-    <string name="pro1_qwertz_nor_1">FinQwerty F(x)tec Pro1, Norwegian based on stock QWERTZ</string>
-    <string name="pro1_qwertz_swe_1">FinQwerty F(x)tec Pro1, Swedish based on stock QWERTZ</string>
-    <string name="pro1_qwertz_usa_1">FinQwerty F(x)tec Pro1, U.S. based on stock QWERTZ</string>
+    <string name="pro1_qwerty_dan_1">FinQwerty F(x)tec Pro1, Danish for physical QWERTY</string>
+    <string name="pro1_qwerty_fin_1">FinQwerty F(x)tec Pro1, Finnish for physical QWERTY</string>
+    <string name="pro1_qwerty_nor_1">FinQwerty F(x)tec Pro1, Norwegian for physical QWERTY</string>
+    <string name="pro1_qwerty_swe_1">FinQwerty F(x)tec Pro1, Swedish for physical QWERTY</string>
+    <string name="pro1_qwertz_dan_1">FinQwerty F(x)tec Pro1, Danish for physical QWERTZ</string>
+    <string name="pro1_qwertz_fin_1">FinQwerty F(x)tec Pro1, Finnish for physical QWERTZ</string>
+    <string name="pro1_qwertz_nor_1">FinQwerty F(x)tec Pro1, Norwegian for physical QWERTZ</string>
+    <string name="pro1_qwertz_swe_1">FinQwerty F(x)tec Pro1, Swedish for physical QWERTZ</string>
+    <string name="pro1_qwertz_usa_1">FinQwerty F(x)tec Pro1, U.S. for physical QWERTZ</string>
 
     <string name="empty_layout">FinQwerty None (stock layout)</string>
 
