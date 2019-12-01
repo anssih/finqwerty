@@ -53,5 +53,6 @@
     <string name="pro1_qwertz_nor_1">FinQwerty F(x)tec Pro1, tanskalainen, fyysinen QWERTZ</string>
     <string name="pro1_qwertz_swe_1">FinQwerty F(x)tec Pro1, ruotsalainen, fyysinen QWERTZ</string>
     <string name="pro1_qwertz_usa_1">FinQwerty F(x)tec Pro1, amerikkalainen, fyysinen QWERTZ</string>
+    <string name="empty_layout">FinQwerty Tyhjä (stock-asettelu)</string>
 
 </resources>
