@@ -69,6 +69,9 @@ key GRAVE {
     label:                              '\u0027'
     base:                               '\u0027'
     shift, fn:                          '~'
+    # android default
+    alt:                                '\u0300'
+    alt+shift:                          '\u0303'
 }
 
 # add ´
@@ -76,7 +79,7 @@ key Q {
     label:                              'Q'
     base:                               'q'
     shift, capslock:                    'Q'
-    fn:                                 '\u0300'
+    fn:                                 '\u0301'
 }
 
 # add `
@@ -84,7 +87,7 @@ key W {
     label:                              'W'
     base:                               'w'
     shift, capslock:                    'W'
-    fn:                                 '\u0301'
+    fn:                                 '\u0300'
 }
 
 # add euro
@@ -93,6 +96,7 @@ key E {
     base:                               'e'
     shift, capslock:                    'E'
     fn:                                 '\u20ac'
+    alt:                                '\u0301'
 }
 
 # add ¨
@@ -100,7 +104,7 @@ key U {
     label:                              'U'
     base:                               'u'
     shift, capslock:                    'U'
-    fn:                                 '\u0308'
+    fn, alt:                            '\u0308'
 }
 
 # add ^
@@ -108,7 +112,7 @@ key I {
     label:                              'I'
     base:                               'i'
     shift, capslock:                    'I'
-    fn:                                 '\u0302'
+    fn, alt:                            '\u0302'
 }
 
 key SEMICOLON {
@@ -152,7 +156,7 @@ key N {
     label:                              'N'
     base:                               'n'
     shift, capslock:                    'N'
-    fn:                                 '\u0303'
+    fn, alt:                            '\u0303'
 }
 
 key M {
