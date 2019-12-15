@@ -115,6 +115,7 @@ key E {
     base:                               'e'
     shift, capslock:                    'E'
     fn:                                 '\u20ac'
+    alt:                                '\u0301'
 }
 
 key R {
@@ -122,6 +123,13 @@ key R {
     base:                               'r'
     shift, capslock:                    'R'
     fn:                                 '\u00b0'
+}
+
+key Y {
+    label:                              'Y'
+    base:                               'y'
+    shift, capslock:                    'Y'
+    fn:                                 '\u0308'
 }
 
 key U {
@@ -136,6 +144,7 @@ key I {
     base:                               'i'
     shift, capslock:                    'I'
     fn:                                 '['
+    alt:                                '\u0302'
 }
 
 key O {
@@ -218,6 +227,13 @@ key Z {
     base:                               'z'
     shift, capslock:                    'Z'
     fn:                                 '|'
+}
+
+key N {
+    label:                              'N'
+    base:                               'n'
+    shift, capslock:                    'N'
+    alt:                                '\u0303'
 }
 
 key M {
