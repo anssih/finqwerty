@@ -1,0 +1,127 @@
+type OVERLAY
+
+# both yellow-arrow keys are 464 (FUNCTION)
+
+# orig BACK
+map key 158 ESCAPE
+
+# ROW 1
+
+key ESCAPE {
+    base:                               fallback BACK
+    fn:                                 fallback HOME
+}
+
+key 1 {
+    label, base:                        '1'
+    shift, fn:                          '!'
+}
+key 2 {
+    label, base:                        '2'
+    shift, fn:                          '@'
+}
+key 3 {
+    label, base:                        '3'
+    shift, fn:                          '#'
+}
+key 4 {
+    label, base:                        '4'
+    shift, fn:                          '$'
+}
+key 5 {
+    label, base:                        '5'
+    shift, fn:                          '%'
+}
+key 6 {
+    label, base:                        '6'
+    shift, fn:                          '^'
+}
+key 7 {
+    label, base:                        '7'
+    shift, fn:                          '&'
+}
+key 8 {
+    label, base:                        '8'
+    shift, fn:                          '*'
+}
+key 9 {
+    label, base:                        '9'
+    shift, fn:                          '('
+}
+key 0 {
+    label, base:                        '0'
+    shift, fn:                          ')'
+}
+key MINUS {
+    label, base:                        '-'
+    shift, fn:                          '_'
+}
+key EQUALS {
+    label, base:                        '='
+    shift, fn:                          '+'
+}
+
+# ROW 2
+
+key GRAVE {
+    label:                              '`'
+    base:                               '`'
+    shift, fn:                          '~'
+    alt:                                '\u0300'
+    alt+shift:                          '\u0303'
+}
+
+key E {
+    label:                              'E'
+    base:                               'e'
+    shift, capslock:                    'E'
+    fn:                                 '\u20ac'
+    alt:                                '\u0301'
+}
+
+key LEFT_BRACKET {
+    label:                              '['
+    base:                               '['
+    shift, fn:                          '{'
+}
+
+key RIGHT_BRACKET {
+    label:                              ']'
+    base:                               ']'
+    shift, fn:                          '}'
+}
+
+# ROW 3
+
+key SEMICOLON {
+    label:                              ';'
+    base:                               ';'
+    shift, fn:                          ':'
+}
+
+key APOSTROPHE {
+    label:                              '\''
+    base:                               '\''
+    shift, fn:                          '"'
+}
+
+# ROW 4
+
+
+key BACKSLASH {
+    label:                              '\u005c'
+    base:                               '\u005c'
+    shift, fn:                          '|'
+}
+
+key COMMA {
+    label:                              ','
+    base:                               ','
+    shift, fn:                          '<'
+}
+
+key PERIOD {
+    label:                              '.'
+    base:                               '.'
+    shift, fn:                          '>'
+}
