@@ -54,8 +54,7 @@ key 2 {
 }
 key 3 {
     label, base:                        '3'
-    shift:                              '#'
-    fn:                                 '\u00a7'
+    shift, fn:                          '\u00a7'
 }
 key 4 {
     label, base:                        '4'
