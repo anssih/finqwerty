@@ -55,11 +55,13 @@ key 1 {
 }
 key 2 {
     label, base:                        '2'
-    shift, fn:                          '@'
+    shift:                              '@'
+    fn:                                 '"'
 }
 key 3 {
     label, base:                        '3'
-    shift, fn:                          '#'
+    shift:                              '#'
+    fn:                                 '\u00a7'
 }
 key 4 {
     label, base:                        '4'
@@ -71,34 +73,55 @@ key 5 {
 }
 key 6 {
     label, base:                        '6'
-    shift, fn:                          '^'
+    shift:                              '^'
+    fn:                                 '&'
 }
 key 7 {
     label, base:                        '7'
-    shift, fn:                          '&'
+    shift:                              '&'
+    fn:                                 '/'
 }
 key 8 {
     label, base:                        '8'
-    shift, fn:                          '*'
+    shift:                              '*'
+    fn:                                 '('
 }
 key 9 {
     label, base:                        '9'
-    shift, fn:                          '('
+    shift:                              '('
+    fn:                                 ')'
 }
 key 0 {
     label, base:                        '0'
-    shift, fn:                          ')'
+    shift:                              ')'
+    fn:                                 '='
 }
 key MINUS {
     label, base:                        '-'
-    shift, fn:                          '_'
+    shift:                              '_'
+    fn:                                 '?'
 }
 key EQUALS {
     label, base:                        '='
-    shift, fn:                          '+'
+    shift:                              '+'
+    fn:                                 '\u0300'
 }
 
 # ROW 2
+
+key Q {
+    label:                              'Q'
+    base:                               'q'
+    shift, capslock:                    'Q'
+    fn:                                 '@'
+}
+
+key W {
+    label:                              'W'
+    base:                               'w'
+    shift, capslock:                    'W'
+    fn:                                 '\u0302'
+}
 
 key E {
     label:                              'E'
@@ -108,46 +131,107 @@ key E {
     alt:                                '\u0301'
 }
 
+key R {
+    label:                              'R'
+    base:                               'r'
+    shift, capslock:                    'R'
+    fn:                                 '\u00b0'
+}
+
+key U {
+    label:                              'U'
+    base:                               'u'
+    shift, capslock:                    'U'
+    fn:                                 '{'
+}
+
+key I {
+    label:                              'I'
+    base:                               'i'
+    shift, capslock:                    'I'
+    fn:                                 '['
+    alt:                                '\u0302'
+}
+
 key O {
     label:                              'O'
     base:                               'o'
-    shift:                              'O'
-    fn:                                 '~'
+    shift, capslock:                    'O'
+    fn:                                 ']'
+}
+
+key P {
+    label:                              'P'
+    base:                               'p'
+    shift, capslock:                    'P'
+    fn:                                 '}'
 }
 
 key LEFT_BRACKET {
     label:                              '['
     base:                               '['
-    shift, fn:                          '{'
+    shift:                              '{'
+    fn:                                 '~'
 }
 
 key RIGHT_BRACKET {
     label:                              ']'
     base:                               ']'
-    shift, fn:                          '}'
+    shift:                              '}'
+    fn:                                 '*'
 }
 
 # ROW 3
 
+key H {
+    label:                              'H'
+    base:                               'h'
+    shift, capslock:                    'H'
+    fn:                                 '\u00bd'
+}
+
+key L {
+    label:                              'L'
+    base:                               'l'
+    shift, capslock:                    'L'
+    fn:                                 '\''
+}
+
 key SEMICOLON {
     label:                              ';'
     base:                               ';'
-    shift, fn:                          ':'
+    shift:                              ':'
+    fn:                                 '\\'
 }
 
 key APOSTROPHE {
     label:                              '\''
     base:                               '\''
-    shift, fn:                          '"'
+    shift:                              '"'
+    fn:                                 '#'
 }
 
 # ROW 4
 
-
 key BACKSLASH {
     label:                              '\u005c'
     base:                               '\u005c'
-    shift, fn:                          '|'
+    shift:                              '|'
+    fn:                                 '>'
+}
+
+key Z {
+    label:                              'Z'
+    base:                               'z'
+    shift, capslock:                    'Z'
+    fn:                                 '|'
+}
+
+key N {
+    label:                              'N'
+    base:                               'n'
+    shift, capslock:                    'N'
+    alt:                                '\u0303'
 }
 
 key M {
@@ -160,17 +244,20 @@ key M {
 key COMMA {
     label:                              ','
     base:                               ','
-    shift, fn:                          '<'
+    shift:                              '<'
+    fn:                                 ';'
 }
 
 key PERIOD {
     label:                              '.'
     base:                               '.'
-    shift, fn:                          '>'
+    shift:                              '>'
+    fn:                                 ':'
 }
 
 key SLASH {
     label:                              '/'
     base:                               '/'
-    shift, fn:                          '?'
+    shift:                              '?'
+    fn:                                 '_'
 }
