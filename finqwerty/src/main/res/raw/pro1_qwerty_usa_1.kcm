@@ -93,6 +93,13 @@ key RIGHT_BRACKET {
 
 # ROW 3
 
+key H {
+    label:                              'H'
+    base:                               'h'
+    shift, capslock:                    'H'
+    fn:                                 '\u00bd'
+}
+
 key SEMICOLON {
     label:                              ';'
     base:                               ';'
