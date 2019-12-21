@@ -137,6 +137,7 @@ key U {
     base:                               'u'
     shift, capslock:                    'U'
     fn:                                 '{'
+    alt:                                '\u0308'
 }
 
 key I {
