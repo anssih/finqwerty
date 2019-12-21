@@ -120,6 +120,13 @@ key BACKSLASH {
     shift, fn:                          '|'
 }
 
+key M {
+    label:                              'M'
+    base:                               'm'
+    shift, capslock:                    'M'
+    fn:                                 '\u00b5'
+}
+
 key COMMA {
     label:                              ','
     base:                               ','
