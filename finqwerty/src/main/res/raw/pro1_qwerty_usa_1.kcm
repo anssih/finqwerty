@@ -114,7 +114,6 @@ key APOSTROPHE {
 
 # ROW 4
 
-
 key BACKSLASH {
     label:                              '\u005c'
     base:                               '\u005c'
