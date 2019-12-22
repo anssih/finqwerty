@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.res.Resources;
 import android.hardware.input.InputManager;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.app.Activity;
@@ -15,6 +16,8 @@ import android.text.Html;
 import android.text.Layout;
 import android.text.method.LinkMovementMethod;
 import android.util.Pair;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.inputmethod.InputMethodInfo;
 import android.view.inputmethod.InputMethodManager;
@@ -41,6 +44,8 @@ public class MainActivity extends Activity {
     /* separate physical keyboard settings activity (settings not directly in input
      * method settings) */
     private static final int semiModeHardKeybMinSDK = 24;
+
+    private static final String WEBSITE = "https://android.onse.fi/finqwerty/";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -87,7 +92,7 @@ public class MainActivity extends Activity {
 
         TextView mainTextView = (TextView)findViewById(R.id.mainText);
         mainTextView.setMovementMethod(LinkMovementMethod.getInstance());
-        mainTextView.setText(Html.fromHtml(String.format(getText(R.string.main_text).toString(), "http://android.onse.fi/finqwerty/")));
+        mainTextView.setText(Html.fromHtml(String.format(getText(R.string.main_text).toString(), WEBSITE)));
 
         boolean directMode = Build.VERSION.SDK_INT >= directModeMinSDK && Build.VERSION.SDK_INT <= directModeMaxSDK;
 
@@ -245,6 +250,22 @@ public class MainActivity extends Activity {
             privLayout2.setVisibility(View.GONE);
         }
 
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.action_website:
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(WEBSITE)));
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 
     private boolean isBootNotificationEnabled() {

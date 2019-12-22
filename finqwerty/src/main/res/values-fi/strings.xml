@@ -59,5 +59,6 @@
     <string name="pro1_qwerty_usaintl_1">FinQwerty F(x)tec Pro1, amerikkalainen (kansainvälinen), fyysinen QWERTY</string>
     <string name="pro1_qwertz_ger_1">FinQwerty F(x)tec Pro1, saksalainen, fyysinen QWERTZ</string>
     <string name="pro1_qwertz_usaintl_1">FinQwerty F(x)tec Pro1, amerikkalainen (kansainvälinen), fyysinen QWERTZ</string>
+    <string name="action_website">Lisätietoja</string>
 
 </resources>
