@@ -72,7 +72,7 @@
     <string name="configure_help_below_imi"><![CDATA[The FinQwerty layouts begin with \"FinQwerty\" in the alphabetical layout list.]]></string>
 
     <string name="action_website">Charts and more</string>
-    <string name="main_text"><![CDATA[FinQwerty provides several physical keyboard layouts for easier access to local characters. See below for instructions on how to configure your phone to use a FinQwerty keyboard layout. Detailed information about the provided keymaps is provided on <a href="%s">the FinQwerty website</a>.]]></string>
+    <string name="main_text"><![CDATA[FinQwerty provides several physical keyboard layouts for easier access to local characters. See below for instructions on how to configure your phone to use a FinQwerty keyboard layout. Detailed charts of the provided keymaps are provided on <a href="%s">the FinQwerty website</a>.]]></string>
 
     <string name="priv_help2"><![CDATA[Note that if you have the BlackBerry Keyboard software keyboard enabled with a non-English software layout, the physical keyboard layout may be reset frequently. To avoid that, configure the software keyboard to use the English (US) layout via Settings => Language & input => BlackBerry Keyboard Settings => Input languages => English (United States) (and deselect all the other languages).]]></string>
 

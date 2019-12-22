@@ -17,7 +17,7 @@
     <string name="hide_help_below">Tämä sovellus sulkeutuu ja FinQwerty piilotetaan käynnistimestä (piilotuksen voimaantulo saattaa vaatia uudelleenkäynnistyksen). Pääset takaisin tähän ruutuun poistamalla FinQwertyn kokonaan ja asentamalla sen uudelleen.</string>
     <string name="hide_help_direct"><![CDATA[Näppäimistöasettelun voi yleensä asettaa myös Androidin asetuksien kautta: Kieli ja syöttötapa => Fyysinen näppäimistö. Jos käytät tätä tapaa ja haluat piilottaa FinQwertyn sovelluskäynnistimestä, paina allaolevaa nappia:]]></string>
     <string name="hide_help_semi"><![CDATA[Jos haluat piilottaa FinQwertyn sovelluskäynnistimestä, paina allaolevaa nappia:]]></string>
-    <string name="main_text"><![CDATA[FinQwerty tarjoaa useita näppäimistöasetteluita (ml. suomalaiset asettelut) ääkkösten käytön helpottamiseksi. FinQwertyn asetusohjeet näkyvät alla. Tarkemmat tiedot saatavilla olevista asetteluista löytyvät <a href="%s">FinQwertyn verkkosivulta</a>.]]></string>
+    <string name="main_text"><![CDATA[FinQwerty tarjoaa useita näppäimistöasetteluita (ml. suomalaiset asettelut) ääkkösten käytön helpottamiseksi. FinQwertyn asetusohjeet näkyvät alla. Tarkat näppäimistökartat asetteluista löytyvät <a href="%s">FinQwertyn verkkosivulta</a>.]]></string>
     <string name="priv_dan_1">FinQwerty Blackberry Priv, tanskalainen</string>
     <string name="priv_fin_1">FinQwerty Blackberry Priv, suomalainen</string>
     <string name="priv_fin_2">FinQwerty Blackberry Priv, suomalainen 2</string>
