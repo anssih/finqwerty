@@ -281,11 +281,11 @@ key SEMICOLON {
 
 key APOSTROPHE {
     label:                              '\''
-    base:                               '\u0301'
-    shift:                              '\u0308'
+    base:                               '\''
+    shift:                              '"'
     alt:                                '"'
-    fn:                                 '\''
-    fn+shift, ctrl+fn:                  '"'
+    fn:                                 '\u0301'
+    fn+shift, ctrl+fn:                  '\u0308'
 }
 
 # ROW 4
