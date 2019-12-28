@@ -2,6 +2,9 @@ type OVERLAY
 
 # both yellow-arrow keys are 464 (FUNCTION)
 
+# orig GRAVE
+map key 41 SLASH
+
 # orig BACK
 map key 158 ESCAPE
 
@@ -67,10 +70,12 @@ key EQUALS {
 
 # ROW 2
 
-key GRAVE {
+key SLASH {
     label:                              '`'
-    base:                               '`'
-    shift, fn:                          '~'
+    base:                               '/'
+    shift:                              '?'
+    fn:                                 '~'
+    fn+shift, fn+ctrl:                  '`'
     alt:                                '\u0300'
     alt+shift:                          '\u0303'
 }
