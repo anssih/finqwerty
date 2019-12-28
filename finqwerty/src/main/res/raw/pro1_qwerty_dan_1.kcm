@@ -11,6 +11,10 @@ map key 13 FORWARD_DEL
 # orig BACK
 map key 158 ESCAPE
 
+# orig SYM but SYM does not do anything at the moment
+# so use as back/wakeup for now
+map key 249 WAKEUP
+
 # ROW 1
 
 key ESCAPE {
