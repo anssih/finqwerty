@@ -88,6 +88,14 @@ key E {
     alt:                                '\u0301'
 }
 
+key P {
+    label:                              'P'
+    base:                               'p'
+    shift, capslock:                    'P'
+    fn:                                 '/'
+    fn+shift, fn+ctrl:                  '?'
+}
+
 key LEFT_BRACKET {
     label:                              '['
     base:                               '['
