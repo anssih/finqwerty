@@ -30,6 +30,10 @@ export ANDROID_HOME="$HOME/Android/Sdk"
 ./gradlew assembleDebug
 ```
 
+Some of the Pro1 layouts (fin/nor/swe and cze qwertz) are generated from other layouts automatically by `generate_layouts.sh`
+which has to be run manually if the Pro1 cze or Pro1 dan layouts are modified
+(TODO: integrate that into the Gradle build and remove the generated files from git).
+
 ## License
 
 This project is licensed under the Apache 2.0 License - see the [LICENSE](LICENSE) file for details.
