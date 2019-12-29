@@ -135,6 +135,20 @@ key H {
     fn:                                 '\u00bd'
 }
 
+key F {
+    label:                              'F'
+    base:                               'f'
+    shift, capslock:                    'F'
+    fn:                                 '['
+}
+
+key G {
+    label:                              'G'
+    base:                               'g'
+    shift, capslock:                    'G'
+    fn:                                 ']'
+}
+
 key P {
     label:                              'P'
     base:                               'p'
