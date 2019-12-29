@@ -26,13 +26,16 @@
     <string name="livmoto_nor_1">FinQwerty Livermorium Moto Mod, Norwegian</string>
     <string name="livmoto_ger_1">FinQwerty Livermorium Moto Mod, German</string>
 
-    <string name="pro1_qwerty_cze_1">FinQwerty F(x)tec Pro1, Czech for physical US QWERTY</string>
+    <string name="pro1_qwerty_cze_1">FinQwerty F(x)tec Pro1, Czech QWERTY for physical US QWERTY</string>
+    <string name="pro1_qwerty_cze_2">FinQwerty F(x)tec Pro1, Czech QWERTZ for physical US QWERTY</string>
     <string name="pro1_qwerty_dan_1">FinQwerty F(x)tec Pro1, Danish for physical US QWERTY</string>
     <string name="pro1_qwerty_fin_1">FinQwerty F(x)tec Pro1, Finnish for physical US QWERTY</string>
     <string name="pro1_qwerty_nor_1">FinQwerty F(x)tec Pro1, Norwegian for physical US QWERTY</string>
     <string name="pro1_qwerty_swe_1">FinQwerty F(x)tec Pro1, Swedish for physical US QWERTY</string>
     <string name="pro1_qwerty_usa_1">FinQwerty F(x)tec Pro1, U.S. for physical US QWERTY</string>
     <string name="pro1_qwerty_usaintl_1">FinQwerty F(x)tec Pro1, U.S. international for physical US QWERTY</string>
+    <string name="pro1_qwertz_cze_1">FinQwerty F(x)tec Pro1, Czech QWERTY for physical DE QWERTZ</string>
+    <string name="pro1_qwertz_cze_2">FinQwerty F(x)tec Pro1, Czech QWERTZ for physical DE QWERTZ</string>
     <string name="pro1_qwertz_dan_1">FinQwerty F(x)tec Pro1, Danish for physical DE QWERTZ</string>
     <string name="pro1_qwertz_fin_1">FinQwerty F(x)tec Pro1, Finnish for physical DE QWERTZ</string>
     <string name="pro1_qwertz_ger_1">FinQwerty F(x)tec Pro1, German for physical DE QWERTZ</string>
