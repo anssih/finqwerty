@@ -120,7 +120,7 @@ key 0 {
 
 key PLUS {
     label, base:                        '='
-    shift, fn:                          '%'
+    shift:                              '%'
     fn:                                 '?'
 }
 key GRAVE {
