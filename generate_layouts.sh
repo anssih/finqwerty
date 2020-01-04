@@ -83,7 +83,7 @@ sed \
 	>$qd/pro1_qwertz_nor_1.kcm
 
 sed \
-	-e "s,# ROW 1,# Y/Z swap\nmap key 20 Z\nmap key 27 Y\n\n&," \
+	-e "s,# ROW 1,# Y/Z swap\nmap key 21 Z\nmap key 44 Y\n\n&," \
 	$qd/pro1_qwerty_cze_1.kcm \
 	>$qd/pro1_qwerty_cze_2.kcm
 

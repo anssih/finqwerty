@@ -10,8 +10,8 @@ map key 158 ESCAPE
 map key 249 WAKEUP
 
 # Y/Z swap
-map key 20 Z
-map key 27 Y
+map key 21 Z
+map key 44 Y
 
 # ROW 1
 
