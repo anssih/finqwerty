@@ -32,7 +32,8 @@
     <keyboard-layout android:name="pro1_qwerty_nor_1" android:label="@string/pro1_qwerty_nor_1" android:keyboardLayout="@raw/pro1_qwerty_nor_1"/>
     <keyboard-layout android:name="pro1_qwerty_swe_1" android:label="@string/pro1_qwerty_swe_1" android:keyboardLayout="@raw/pro1_qwerty_swe_1"/>
     <keyboard-layout android:name="pro1_qwerty_usa_1" android:label="@string/pro1_qwerty_usa_1" android:keyboardLayout="@raw/pro1_qwerty_usa_1"/>
-    <keyboard-layout android:name="pro1_qwerty_usaintl_1" android:label="@string/pro1_qwerty_usaintl_1" android:keyboardLayout="@raw/pro1_qwerty_usaintl_1"/>
+    <keyboard-layout android:name="pro1_qwerty_usaintl_altgr_variant_1" android:label="@string/pro1_qwerty_usaintl_altgr_variant_1" android:keyboardLayout="@raw/pro1_qwerty_usaintl_altgr_variant_1"/>
+    <keyboard-layout android:name="pro1_qwerty_usaintl_dead_key_variant_1" android:label="@string/pro1_qwerty_usaintl_dead_key_variant_1" android:keyboardLayout="@raw/pro1_qwerty_usaintl_dead_key_variant_1"/>
     <keyboard-layout android:name="pro1_qwertz_cze_1" android:label="@string/pro1_qwertz_cze_1" android:keyboardLayout="@raw/pro1_qwertz_cze_1"/>
     <keyboard-layout android:name="pro1_qwertz_cze_2" android:label="@string/pro1_qwertz_cze_2" android:keyboardLayout="@raw/pro1_qwertz_cze_2"/>
     <keyboard-layout android:name="pro1_qwertz_dan_1" android:label="@string/pro1_qwertz_dan_1" android:keyboardLayout="@raw/pro1_qwertz_dan_1"/>
@@ -41,7 +42,8 @@
     <keyboard-layout android:name="pro1_qwertz_nor_1" android:label="@string/pro1_qwertz_nor_1" android:keyboardLayout="@raw/pro1_qwertz_nor_1"/>
     <keyboard-layout android:name="pro1_qwertz_swe_1" android:label="@string/pro1_qwertz_swe_1" android:keyboardLayout="@raw/pro1_qwertz_fin_1"/>
     <keyboard-layout android:name="pro1_qwertz_usa_1" android:label="@string/pro1_qwertz_usa_1" android:keyboardLayout="@raw/pro1_qwertz_usa_1"/>
-    <keyboard-layout android:name="pro1_qwertz_usaintl_1" android:label="@string/pro1_qwertz_usaintl_1" android:keyboardLayout="@raw/pro1_qwertz_usaintl_1"/>
+    <keyboard-layout android:name="pro1_qwertz_usaintl_altgr_variant_1" android:label="@string/pro1_qwertz_usaintl_altgr_variant_1" android:keyboardLayout="@raw/pro1_qwertz_usaintl_altgr_variant_1"/>
+    <keyboard-layout android:name="pro1_qwertz_usaintl_dead_key_variant_1" android:label="@string/pro1_qwertz_usaintl_dead_key_variant_1" android:keyboardLayout="@raw/pro1_qwertz_usaintl_dead_key_variant_1"/>
 
     <keyboard-layout android:name="empty" android:label="@string/empty_layout" android:keyboardLayout="@raw/empty"/>
 

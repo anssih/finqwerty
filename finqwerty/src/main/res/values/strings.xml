@@ -33,7 +33,8 @@
     <string name="pro1_qwerty_nor_1">FinQwerty F(x)tec Pro1, Norwegian for physical US QWERTY</string>
     <string name="pro1_qwerty_swe_1">FinQwerty F(x)tec Pro1, Swedish for physical US QWERTY</string>
     <string name="pro1_qwerty_usa_1">FinQwerty F(x)tec Pro1, U.S. for physical US QWERTY</string>
-    <string name="pro1_qwerty_usaintl_1">FinQwerty F(x)tec Pro1, U.S. international for physical US QWERTY</string>
+    <string name="pro1_qwerty_usaintl_altgr_variant_1">FinQwerty F(x)tec Pro1, U.S. international for physical US QWERTY (AltGr)</string>
+    <string name="pro1_qwerty_usaintl_dead_key_variant_1">FinQwerty F(x)tec Pro1, U.S. international for physical US QWERTY (Deadkey)</string>
     <string name="pro1_qwertz_cze_1">FinQwerty F(x)tec Pro1, Czech QWERTY for physical DE QWERTZ</string>
     <string name="pro1_qwertz_cze_2">FinQwerty F(x)tec Pro1, Czech QWERTZ for physical DE QWERTZ</string>
     <string name="pro1_qwertz_dan_1">FinQwerty F(x)tec Pro1, Danish for physical DE QWERTZ</string>
@@ -42,7 +43,8 @@
     <string name="pro1_qwertz_nor_1">FinQwerty F(x)tec Pro1, Norwegian for physical DE QWERTZ</string>
     <string name="pro1_qwertz_swe_1">FinQwerty F(x)tec Pro1, Swedish for physical DE QWERTZ</string>
     <string name="pro1_qwertz_usa_1">FinQwerty F(x)tec Pro1, U.S. for physical DE QWERTZ</string>
-    <string name="pro1_qwertz_usaintl_1">FinQwerty F(x)tec Pro1, U.S. international for physical DE QWERTZ</string>
+    <string name="pro1_qwertz_usaintl_altgr_variant_1">FinQwerty F(x)tec Pro1, U.S. international for physical DE QWERTZ (AltGr)</string>
+    <string name="pro1_qwertz_usaintl_dead_key_variant_1">FinQwerty F(x)tec Pro1, U.S. international for physical DE QWERTZ (Deadkey)</string>
 
     <string name="empty_layout">FinQwerty None (stock layout)</string>
 
