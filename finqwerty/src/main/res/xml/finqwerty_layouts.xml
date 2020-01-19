@@ -29,6 +29,7 @@
     <keyboard-layout android:name="pro1_qwerty_cze_2" android:label="@string/pro1_qwerty_cze_2" android:keyboardLayout="@raw/pro1_qwerty_cze_2"/>
     <keyboard-layout android:name="pro1_qwerty_dan_1" android:label="@string/pro1_qwerty_dan_1" android:keyboardLayout="@raw/pro1_qwerty_dan_1"/>
     <keyboard-layout android:name="pro1_qwerty_fin_1" android:label="@string/pro1_qwerty_fin_1" android:keyboardLayout="@raw/pro1_qwerty_fin_1"/>
+    <keyboard-layout android:name="pro1_qwerty_hun_1" android:label="@string/pro1_qwerty_hun_1" android:keyboardLayout="@raw/pro1_qwerty_hun_1"/>
     <keyboard-layout android:name="pro1_qwerty_nor_1" android:label="@string/pro1_qwerty_nor_1" android:keyboardLayout="@raw/pro1_qwerty_nor_1"/>
     <keyboard-layout android:name="pro1_qwerty_swe_1" android:label="@string/pro1_qwerty_swe_1" android:keyboardLayout="@raw/pro1_qwerty_swe_1"/>
     <keyboard-layout android:name="pro1_qwerty_usa_1" android:label="@string/pro1_qwerty_usa_1" android:keyboardLayout="@raw/pro1_qwerty_usa_1"/>
@@ -38,6 +39,7 @@
     <keyboard-layout android:name="pro1_qwertz_dan_1" android:label="@string/pro1_qwertz_dan_1" android:keyboardLayout="@raw/pro1_qwertz_dan_1"/>
     <keyboard-layout android:name="pro1_qwertz_fin_1" android:label="@string/pro1_qwertz_fin_1" android:keyboardLayout="@raw/pro1_qwertz_fin_1"/>
     <keyboard-layout android:name="pro1_qwertz_ger_1" android:label="@string/pro1_qwertz_ger_1" android:keyboardLayout="@raw/pro1_qwertz_ger_1"/>
+    <keyboard-layout android:name="pro1_qwertz_hun_1" android:label="@string/pro1_qwertz_hun_1" android:keyboardLayout="@raw/pro1_qwertz_hun_1"/>
     <keyboard-layout android:name="pro1_qwertz_nor_1" android:label="@string/pro1_qwertz_nor_1" android:keyboardLayout="@raw/pro1_qwertz_nor_1"/>
     <keyboard-layout android:name="pro1_qwertz_swe_1" android:label="@string/pro1_qwertz_swe_1" android:keyboardLayout="@raw/pro1_qwertz_fin_1"/>
     <keyboard-layout android:name="pro1_qwertz_usa_1" android:label="@string/pro1_qwertz_usa_1" android:keyboardLayout="@raw/pro1_qwertz_usa_1"/>
