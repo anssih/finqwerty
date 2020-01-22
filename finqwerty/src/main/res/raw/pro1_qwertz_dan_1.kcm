@@ -60,6 +60,7 @@ key 3 {
     label, base:                        '3'
     shift:                              '#'
     fn:                                 '\u00a7'
+    fn+shift, ctrl+fn:                  '\u00a3'
 }
 key 4 {
     label, base:                        '4'

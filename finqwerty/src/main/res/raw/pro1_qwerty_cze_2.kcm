@@ -39,6 +39,7 @@ key 3 {
     capslock:                           '\u0160'
     shift:                              '3'
     fn:                                 '#'
+    fn+shift, ctrl+fn:                  '\u00a3'
 }
 key 4 {
     label:                              '4'

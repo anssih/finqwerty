@@ -29,6 +29,12 @@ key 2 {
     fn:                                 '@'
 }
 
+key 3 {
+    label, base:                        '3'
+    shift, fn:                          '#'
+    fn+shift, ctrl+fn:                  '\u00a3'
+}
+
 key 6 {
     label, base:                        '6'
     shift:                              '&'
@@ -211,10 +217,6 @@ key BACKSLASH {
 key 1 {
     label, base:                        '1'
     shift, fn:                          '!'
-}
-key 3 {
-    label, base:                        '3'
-    shift, fn:                          '#'
 }
 key 4 {
     label, base:                        '4'

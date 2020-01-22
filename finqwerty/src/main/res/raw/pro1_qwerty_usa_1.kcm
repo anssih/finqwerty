@@ -30,6 +30,7 @@ key 2 {
 key 3 {
     label, base:                        '3'
     shift, fn:                          '#'
+    fn+shift, ctrl+fn:                  '\u00a3'
 }
 key 4 {
     label, base:                        '4'
