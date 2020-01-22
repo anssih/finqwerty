@@ -9,8 +9,8 @@ android {
     defaultConfig {
         minSdkVersion 16
         targetSdkVersion 28
-        versionCode 30
-        versionName "1.5.2"
+        versionCode 31
+        versionName "1.5.2+development"
     }
 
     sourceSets.main.res.srcDirs += generatedLayoutsResDir
