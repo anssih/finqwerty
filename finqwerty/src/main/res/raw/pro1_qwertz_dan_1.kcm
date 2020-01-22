@@ -270,3 +270,19 @@ key ESCAPE {
     base:                               fallback BACK
     fn:                                 replace HOME
 }
+
+key DPAD_UP {
+    fn:                                 replace PAGE_UP
+}
+
+key DPAD_DOWN {
+    fn:                                 replace PAGE_DOWN
+}
+
+key DPAD_LEFT {
+    fn:                                 replace MOVE_HOME
+}
+
+key DPAD_RIGHT {
+    fn:                                 replace MOVE_END
+}
