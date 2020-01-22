@@ -19,6 +19,17 @@ REMOVE_SCANCODES = "remove_scancodes"
 REMOVE_KEYCODES = "remove_keycodes"
 ADD = "add"
 
+# complex replacement
+# replace only within keycode
+REPL_KEYCODE = "repl_keycode"
+# prev string
+REPL_OLD = "repl_old"
+# replacement string
+REPL_NEW = "repl_new"
+# do not replace if line contains:
+REPL_SKIP = "repl_skip"
+
+
 DAN_SWE_REPLACE = [
     ("æ", "ö"),
     ("u00e6", "u00f6"),
@@ -39,6 +50,59 @@ DAN_NOR_REPLACE = [
     ("u00f8", "u00e6"),
     ("Ø", "Æ"),
     ("u00d8", "u00c6"),
+]
+
+USINTL_ALTGR_REPLACE_APOSTROPHE = [
+    {
+        REPL_KEYCODE: "APOSTROPHE",
+        REPL_OLD: r"'\''",
+        REPL_NEW: r"'\u0301'",
+        REPL_SKIP: ["alt:", "label:"],
+    },
+    {
+        REPL_KEYCODE: "APOSTROPHE",
+        REPL_OLD: "'\"'",
+        REPL_NEW: r"'\u0308'",
+        REPL_SKIP: ["alt:", "label:"],
+    },
+    {
+        REPL_KEYCODE: "APOSTROPHE",
+        REPL_OLD: r"'\u0301'",
+        REPL_NEW: r"'\''",
+        REPL_SKIP: ["alt:", "label:"],
+    },
+    {
+        REPL_KEYCODE: "APOSTROPHE",
+        REPL_OLD: r"'\u0308'",
+        REPL_NEW: "'\"'",
+        REPL_SKIP: ["alt:", "label:"],
+    },
+]
+USINTL_ALTGR_REPLACE_GRAVE = [
+    {
+        REPL_KEYCODE: "GRAVE",
+        REPL_OLD: r"'`'",
+        REPL_NEW: r"'\u0300'",
+        REPL_SKIP: ["alt:", "label:"],
+    },
+    {
+        REPL_KEYCODE: "GRAVE",
+        REPL_OLD: "'~'",
+        REPL_NEW: r"'\u0303'",
+        REPL_SKIP: ["alt:", "label:"],
+    },
+    {
+        REPL_KEYCODE: "GRAVE",
+        REPL_OLD: r"'\u0300'",
+        REPL_NEW: r"'`'",
+        REPL_SKIP: ["alt:", "label:"],
+    },
+    {
+        REPL_KEYCODE: "GRAVE",
+        REPL_OLD: r"'\u0303'",
+        REPL_NEW: "'~'",
+        REPL_SKIP: ["alt:", "label:"],
+    },
 ]
 
 GENERATED_LAYOUTS = [
@@ -80,6 +144,18 @@ GENERATED_LAYOUTS = [
         REPLACE: DAN_SWE_REPLACE,
     },
     {
+        NAME: "pro1_qwerty_usaintl_fndead.kcm",
+        SOURCE: "pro1_qwerty_usaintl_1.kcm",
+        REPLACE: USINTL_ALTGR_REPLACE_APOSTROPHE+
+                 USINTL_ALTGR_REPLACE_GRAVE,
+    },
+    {
+        NAME: "pro1_qwertz_usaintl_fndead.kcm",
+        SOURCE: "pro1_qwertz_usaintl_1.kcm",
+        REPLACE: USINTL_ALTGR_REPLACE_APOSTROPHE,
+        # no GRAVE key on QWERTZ variant
+    },
+    {
         NAME: "pro1_qwertz_fin_1.kcm",
         SOURCE: "pro1_qwertz_dan_1.kcm",
         REPLACE: DAN_SWE_REPLACE,
@@ -113,6 +189,11 @@ key O {
     },
 ]
 
+def expand_replacement(rule):
+    if isinstance(rule, tuple):
+        return {REPL_OLD: rule[0], REPL_NEW: rule[1]}
+    return rule
+
 def generate_layout(layout, target_dir):
     pathlib.Path(target_dir).mkdir(parents=True, exist_ok=True)
     layout_dir = os.path.join(os.path.dirname(__file__), "finqwerty", "src", "main", "res", "raw")
@@ -121,7 +202,8 @@ def generate_layout(layout, target_dir):
     open(os.path.join(source_dir, layout[SOURCE]), 'r') as src, \
     open(os.path.join(target_dir, layout[NAME]), 'w') as dst:
         remove_this_key = False
-        rules_matched = {REPLACE: set(), REMOVE_SCANCODES: set(), REMOVE_KEYCODES: set()}
+        cur_keycode = None
+        rules_matched = {REPLACE: [], REMOVE_SCANCODES: [], REMOVE_KEYCODES: []}
         for line in src:
             if remove_this_key:
                 if line.startswith('}'):
@@ -129,33 +211,43 @@ def generate_layout(layout, target_dir):
                 # skip this key
                 continue
 
+            if line.startswith('}'):
+                cur_keycode = None
+
             if line.startswith("map key "):
                 for scancode in layout.get(REMOVE_SCANCODES, []):
                     if line.startswith("map key {} ".format(scancode)):
                         line = "#" + line
-                        rules_matched[REMOVE_SCANCODES].add(scancode)
+                        rules_matched[REMOVE_SCANCODES].append(scancode)
                         break
 
             if line.startswith("key "):
+                cur_keycode = line.split()[1]
+
                 for keycode in layout.get(REMOVE_KEYCODES, []):
                     if line.startswith("key {} ".format(keycode)):
                         remove_this_key = True
-                        rules_matched[REMOVE_KEYCODES].add(keycode)
+                        rules_matched[REMOVE_KEYCODES].append(keycode)
                         break
                 if remove_this_key:
                     continue
 
-            for replacement in layout.get(REPLACE, []):
-                if replacement[0] in line:
-                    line = line.replace(replacement[0], replacement[1])
-                    rules_matched[REPLACE].add(replacement)
+            for replacement_orig in layout.get(REPLACE, []):
+                replacement = expand_replacement(replacement_orig)
+                if REPL_KEYCODE in replacement and cur_keycode != replacement[REPL_KEYCODE]:
+                    continue
+                if any(skip in line for skip in replacement.get(REPL_SKIP, [])):
+                    continue
+                if replacement[REPL_OLD] in line:
+                    line = line.replace(replacement[REPL_OLD], replacement[REPL_NEW])
+                    rules_matched[REPLACE].append(replacement_orig)
                     break
             dst.write(line)
 
         for ruletype in rules_matched.keys():
             for rule in layout.get(ruletype, []):
                 if rule not in rules_matched[ruletype]:
-                    if ruletype == REPLACE and any(ord(c) >= 128 for c in rule[0]):
+                    if ruletype == REPLACE and any(ord(c) >= 128 for c in expand_replacement(rule)[REPL_OLD]):
                         # non-ASCII rule, it is just for comments so allow not matching
                         continue
                     raise RuntimeError(f"Rule {rule} for {layout[NAME]} were never executed")
