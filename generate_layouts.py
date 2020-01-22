@@ -121,6 +121,7 @@ def generate_layout(layout, target_dir):
     open(os.path.join(source_dir, layout[SOURCE]), 'r') as src, \
     open(os.path.join(target_dir, layout[NAME]), 'w') as dst:
         remove_this_key = False
+        rules_matched = {REPLACE: set(), REMOVE_SCANCODES: set(), REMOVE_KEYCODES: set()}
         for line in src:
             if remove_this_key:
                 if line.startswith('}'):
@@ -132,12 +133,14 @@ def generate_layout(layout, target_dir):
                 for scancode in layout.get(REMOVE_SCANCODES, []):
                     if line.startswith("map key {} ".format(scancode)):
                         line = "#" + line
+                        rules_matched[REMOVE_SCANCODES].add(scancode)
                         break
 
             if line.startswith("key "):
                 for keycode in layout.get(REMOVE_KEYCODES, []):
                     if line.startswith("key {} ".format(keycode)):
                         remove_this_key = True
+                        rules_matched[REMOVE_KEYCODES].add(keycode)
                         break
                 if remove_this_key:
                     continue
@@ -145,8 +148,18 @@ def generate_layout(layout, target_dir):
             for replacement in layout.get(REPLACE, []):
                 if replacement[0] in line:
                     line = line.replace(replacement[0], replacement[1])
+                    rules_matched[REPLACE].add(replacement)
                     break
             dst.write(line)
+
+        for ruletype in rules_matched.keys():
+            for rule in layout.get(ruletype, []):
+                if rule not in rules_matched[ruletype]:
+                    if ruletype == REPLACE and any(ord(c) >= 128 for c in rule[0]):
+                        # non-ASCII rule, it is just for comments so allow not matching
+                        continue
+                    raise RuntimeError(f"Rule {rule} for {layout[NAME]} were never executed")
+
         dst.write(layout.get(ADD, ""))
 
 def generate_layouts(layouts, target_dir):
