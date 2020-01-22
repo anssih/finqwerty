@@ -1,5 +1,8 @@
 apply plugin: 'com.android.application'
 
+def generatedLayoutsResDir = new File("$buildDir/generated/layouts")
+def generatedLayoutsRawDir = new File("$generatedLayoutsResDir/raw")
+
 android {
     compileSdkVersion 28
 
@@ -9,4 +12,12 @@ android {
         versionCode 30
         versionName "1.5.2"
     }
+
+    sourceSets.main.res.srcDirs += generatedLayoutsResDir
 }
+
+task generateLayouts(type: Exec) {
+    commandLine "python3", "$projectDir/../generate_layouts.py", "$generatedLayoutsRawDir"
+}
+
+preBuild.dependsOn generateLayouts

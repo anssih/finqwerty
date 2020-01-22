@@ -22,6 +22,8 @@ FinQwerty is available from Google Play: [FinQwerty](https://play.google.com/sto
 
 ## Building
 
+Python 3 is required to build FinQwerty.
+
 The project uses Gradle and can be built with Android Studio or via commandline, for example:
 
 ```
@@ -30,9 +32,13 @@ export ANDROID_HOME="$HOME/Android/Sdk"
 ./gradlew assembleDebug
 ```
 
-Some of the Pro1 layouts (fin/nor/swe and cze qwertz) are generated from other layouts automatically by `generate_layouts.py`
-which has to be run manually if the Pro1 cze or Pro1 dan layouts are modified
-(TODO: integrate that into the Gradle build and remove the generated files from git).
+## Layout files
+
+Some of the Pro1 layouts (fin/nor/swe and cze qwerty) are generated from other layouts automatically by `generate_layouts.py`
+during the build process and are therefore not found in this repository.
+
+For convenience, all the `.kcm` files, including automatically generated ones, from the latest FinQwerty release can be found here:
+https://android.onse.fi/finqwerty/kcm/
 
 ## License
 
