@@ -268,5 +268,5 @@ key MINUS {
 
 key ESCAPE {
     base:                               fallback BACK
-    fn:                                 fallback HOME
+    fn:                                 replace HOME
 }

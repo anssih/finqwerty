@@ -19,7 +19,7 @@ map key 249 WAKEUP
 
 key ESCAPE {
     base:                               fallback BACK
-    fn:                                 fallback HOME
+    fn:                                 replace HOME
 }
 
 # scandic shift+number
