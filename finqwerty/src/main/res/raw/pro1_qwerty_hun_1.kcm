@@ -18,7 +18,8 @@ key ESCAPE {
 
 key 1 {
     label, base:                        '1'
-    shift, alt:                         '\''
+    shift:                              '\''
+    alt:                                '!'
     fn:                                 '~'
     fn+shift, ctrl+fn:                  '\u00b9'
 }
@@ -38,7 +39,8 @@ key 3 {
 }
 key 4 {
     label, base:                        '4'
-    shift, alt:                         '!'
+    shift:                              '!'
+    alt:                                '$'
     fn:                                 '\u02d8'
     fn+shift, ctrl+fn:                  '\u00a3'
 }
@@ -80,6 +82,7 @@ key 0 {
     label:                              '\u00d6'
     base:                               '\u00f6'
     shift, capslock:                    '\u00d6'
+    alt:                                '='
     fn, fn+capslock:                    '0'
     shift+fn, ctrl+fn:                  '\u00a7'
 }
@@ -307,7 +310,7 @@ key APOSTROPHE {
     label:                              '\u00e1'
     base:                               '\u00e1'
     shift, capslock:                    '\u00c1'
-    alt:                                '"'
+    alt:                                '#'
     fn:                                 '\u03b2'
     fn+shift, ctrl+fn:                  '\u0308'
 }
@@ -327,6 +330,7 @@ key Z {
     label:                              'Y'
     base:                               'y'
     shift, capslock:                    'Y'
+    alt:                                '|'
     fn:                                 '>'
     fn+shift, ctrl+fn:                  '\u00dc'
 }
@@ -402,7 +406,7 @@ key SLASH {
     label:                              '-'
     base:                               '-'
     shift:                              '_'
-    alt:                                '_'
+    alt:                                '-'
     fn:                                 '*'
     fn+shift, ctrl+fn:                  '\u0309'
 }
