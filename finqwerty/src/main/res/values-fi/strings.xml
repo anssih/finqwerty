@@ -63,5 +63,9 @@
     <string name="pro1_qwerty_cze_2">FinQwerty F(x)tec Pro1, tšekkiläinen QWERTZ, fyysinen QWERTY</string>
     <string name="pro1_qwertz_cze_1">FinQwerty F(x)tec Pro1, tšekkiläinen QWERTY, fyysinen QWERTZ</string>
     <string name="pro1_qwertz_cze_2">FinQwerty F(x)tec Pro1, tšekkiläinen QWERTZ, fyysinen QWERTZ</string>
+    <string name="pro1_qwerty_hun_1">FinQwerty F(x)tec Pro1, unkarilainen, fyysinen QWERTY</string>
+    <string name="pro1_qwerty_usaintl_fndead">FinQwerty F(x)tec Pro1, amerikkalainen (kansainvälinen), Fn-tarkenäppäimillä, fyysinen QWERTY</string>
+    <string name="pro1_qwertz_hun_1">FinQwerty F(x)tec Pro1, unkarilainen, fyysinen QWERTZ</string>
+    <string name="pro1_qwertz_usaintl_fndead">FinQwerty F(x)tec Pro1, amerikkalainen (kansainvälinen), Fn-tarkenäppäimillä, fyysinen QWERTZ</string>
 
 </resources>
