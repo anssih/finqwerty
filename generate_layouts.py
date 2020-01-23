@@ -259,11 +259,12 @@ def generate_layouts(layouts, target_dir):
         generate_layout(layout, target_dir)
 
 def remove_previous_layouts(target_dir):
-    # for safety, only remove .kcm files
-    for path in pathlib.Path(target_dir).iterdir():
-        if path.suffix == '.kcm':
-            path.unlink()
-    pathlib.Path(target_dir).rmdir()
+    if pathlib.Path(target_dir).exists():
+        # for safety, only remove .kcm files
+        for path in pathlib.Path(target_dir).iterdir():
+            if path.suffix == '.kcm':
+                path.unlink()
+        pathlib.Path(target_dir).rmdir()
 
 def generate_all_layouts(target_dir):
     # in case layouts are removed, clean the target directory
