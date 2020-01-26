@@ -263,6 +263,7 @@ public class MainActivity extends Activity {
         switch (item.getItemId()) {
             case R.id.action_website:
                 startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(WEBSITE)));
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
