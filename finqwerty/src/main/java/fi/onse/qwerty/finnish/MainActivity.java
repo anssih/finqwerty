@@ -45,6 +45,7 @@ public class MainActivity extends Activity {
      * method settings) */
     private static final int semiModeHardKeybMinSDK = 24;
 
+    private static final String CHANGELOG = "https://github.com/anssih/finqwerty/releases";
     private static final String WEBSITE = "https://android.onse.fi/finqwerty/";
 
     @Override
@@ -261,6 +262,9 @@ public class MainActivity extends Activity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
+            case R.id.action_changelog:
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(CHANGELOG)));
+                return true;
             case R.id.action_website:
                 startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(WEBSITE)));
                 return true;

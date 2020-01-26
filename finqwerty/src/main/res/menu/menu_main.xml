@@ -4,4 +4,8 @@
         android:id="@+id/action_website"
         android:title="@string/action_website"
         android:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/action_changelog"
+        android:title="@string/action_changelog"
+        android:showAsAction="ifRoom"/>
 </menu>
