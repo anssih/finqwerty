@@ -31,11 +31,12 @@
     <string name="pro1_qwerty_dan_1">FinQwerty F(x)tec Pro1, Danish for physical US QWERTY</string>
     <string name="pro1_qwerty_fin_1">FinQwerty F(x)tec Pro1, Finnish for physical US QWERTY</string>
     <string name="pro1_qwerty_hun_1">FinQwerty F(x)tec Pro1, Hungarian for physical US QWERTY</string>
+    <string name="pro1_qwerty_ita_1">FinQwerty F(x)tec Pro1, Italian for physical US QWERTY</string>
     <string name="pro1_qwerty_nor_1">FinQwerty F(x)tec Pro1, Norwegian for physical US QWERTY</string>
     <string name="pro1_qwerty_pol_prog">FinQwerty F(x)tec Pro1, Polish (programmer's) for physical US QWERTY</string>
     <string name="pro1_qwerty_swe_1">FinQwerty F(x)tec Pro1, Swedish for physical US QWERTY</string>
     <string name="pro1_qwerty_usa_1">FinQwerty F(x)tec Pro1, U.S. for physical US QWERTY</string>
-    <string name="pro1_qwerty_usaintl_1">FinQwerty F(x)tec Pro1, U.S. intl. for physical US QWERTY</string>
+    <string name="pro1_qwerty_usaintl_1">FinQwerty F(x)tec Pro1, U.S. intl. with dead keys for physical US QWERTY</string>
     <string name="pro1_qwerty_usaintl_fndead">FinQwerty F(x)tec Pro1, U.S. intl. with Fn dead keys for physical US QWERTY</string>
     <string name="pro1_qwertz_cze_1">FinQwerty F(x)tec Pro1, Czech QWERTY for physical DE QWERTZ</string>
     <string name="pro1_qwertz_cze_2">FinQwerty F(x)tec Pro1, Czech QWERTZ for physical DE QWERTZ</string>
@@ -80,6 +81,7 @@
     <string name="configure_help_below_imi"><![CDATA[The FinQwerty layouts begin with \"FinQwerty\" in the alphabetical layout list.]]></string>
 
     <string name="action_website">Charts and more</string>
+    <string name="action_changelog">Changelog</string>
     <string name="main_text"><![CDATA[FinQwerty provides several physical keyboard layouts for easier access to local characters. See below for instructions on how to configure your phone to use a FinQwerty keyboard layout. Detailed charts of the provided keymaps are provided on <a href="%s">the FinQwerty website</a>.]]></string>
 
     <string name="priv_help2"><![CDATA[Note that if you have the BlackBerry Keyboard software keyboard enabled with a non-English software layout, the physical keyboard layout may be reset frequently. To avoid that, configure the software keyboard to use the English (US) layout via Settings => Language & input => BlackBerry Keyboard Settings => Input languages => English (United States) (and deselect all the other languages).]]></string>
