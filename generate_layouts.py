@@ -123,6 +123,8 @@ USINTL_POLPROG_REPLACE = [
     ("u00c6", "u017b"),  # Æ to Ż
     ("u00a9", "u0107"),  # © to ć
     ("u00a2", "u0106"),  # ¢ to Ć
+    ("u00f1", "u0144"),  # ñ to ń
+    ("u00d1", "u0143"),  # Ñ to Ń
 ]
 
 GENERATED_LAYOUTS = [
