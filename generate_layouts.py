@@ -105,7 +105,7 @@ USINTL_ALTGR_REPLACE_GRAVE = [
     },
 ]
 
-USINTL_POLPROG_REPLACE = [
+USINTL_POL_PROG_REPLACE = [
     ("u00e9", "u0119"),  # é to ę
     ("u00c9", "u0118"),  # É to Ę
     ("u00e1", "u0105"),  # á to ą
@@ -210,10 +210,10 @@ key O {
 """,
     },
     {
-        NAME: "pro1_qwerty_polprog_fndead.kcm",
+        NAME: "pro1_qwerty_pol_prog.kcm",
         SOURCE: "pro1_qwerty_usaintl_fndead.kcm",
         IS_SOURCE_GENERATED: True,
-        REPLACE: USINTL_POLPROG_REPLACE,
+        REPLACE: USINTL_POL_PROG_REPLACE,
         REMOVE_KEYCODES : [
             "X",
         ],
