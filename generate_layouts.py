@@ -105,6 +105,28 @@ USINTL_ALTGR_REPLACE_GRAVE = [
     },
 ]
 
+USINTL_POL_PROG_REPLACE = [
+    ("u00e9", "u0119"),  # é to ę
+    ("u00c9", "u0118"),  # É to Ę
+    ("u00e1", "u0105"),  # á to ą
+    ("u00c1", "u0104"),  # Á to Ą
+    {
+        REPL_KEYCODE: "S",
+        REPL_OLD: r"'\u00df'",
+        REPL_NEW: r"'\u015b'",
+        REPL_SKIP: ["alt:"],
+    },  # ß to ś (except on alt modifier)
+    ("u00a7", "u015a"),  # § to Ś
+    ("u00f8", "u0142"),  # ø to ł
+    ("u00d8", "u0141"),  # Ø to Ł
+    ("u00e6", "u017c"),  # æ to ż
+    ("u00c6", "u017b"),  # Æ to Ż
+    ("u00a9", "u0107"),  # © to ć
+    ("u00a2", "u0106"),  # ¢ to Ć
+    ("u00f1", "u0144"),  # ñ to ń
+    ("u00d1", "u0143"),  # Ñ to Ń
+]
+
 GENERATED_LAYOUTS = [
     {
         NAME: "pro1_qwerty_cze_1.kcm",
@@ -184,6 +206,24 @@ key O {
     shift, capslock:                    'O'
     fn:                                 '\u00e5' # å
     fn+shift, fn+capslock, fn+ctrl:     '\u00c5' # Å
+}
+""",
+    },
+    {
+        NAME: "pro1_qwerty_pol_prog.kcm",
+        SOURCE: "pro1_qwerty_usaintl_fndead.kcm",
+        IS_SOURCE_GENERATED: True,
+        REPLACE: USINTL_POL_PROG_REPLACE,
+        REMOVE_KEYCODES : [
+            "X",
+        ],
+        ADD: r"""
+key X {
+    label:                              'X'
+    base:                               'x'
+    shift, capslock:                    'X'
+    fn:                                 '\u017a' # ź
+    fn+shift, ctrl+fn, fn+capslock:     '\u0179' # Ź
 }
 """,
     },
