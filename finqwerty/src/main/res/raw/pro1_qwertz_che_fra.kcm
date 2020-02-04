@@ -376,6 +376,7 @@ key PERIOD {
     label:                              '.'
     base:                               '.'
     shift, fn:                          ':'
+    alt:                                '\u00b7' # ·
 }
 
 key MINUS {
