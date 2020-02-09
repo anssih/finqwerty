@@ -48,7 +48,7 @@ key 2 {
 key 3 {
     label:                              '3'
     base:                               '3'
-    shift:                              '№'
+    shift:                              '\u2116'
     alt:                                '\u00b3'
     fn:			                		'\u00a3'
 }
@@ -73,7 +73,7 @@ key 5 {
 key 6 {
     label:                              '6'
     base:                               '6'
-    shift:                              '€'
+    shift:                              '\u20AC'
     alt+shift:                          '\u0302'
     alt:                                '\u00bc'
     fn:				                	'>'
@@ -82,7 +82,7 @@ key 6 {
 key 7 {
     label:                              '7'
     base:                               '7'
-    shift:                              '§'
+    shift:                              '\u00A7'
     alt:                                '\u00bd'
     fn:			                		'['
 }
@@ -124,8 +124,6 @@ key Q {
     shift, capslock:                    '\u042f'
     alt:                                '\u00e4'
     alt+shift, alt+capslock:            '\u00c4'
-    fn:                                 '\u0447'
-    fn+shift:                           '\u0427'
 }
 
 key W {
@@ -157,8 +155,6 @@ key T {
     shift, capslock:                    '\u0422'
     alt:                                '\u00fe'
     alt+shift, alt+capslock:            '\u00de'
-    fn:                                 '\u0448'
-    fn+shift:                           '\u0428'
 }
 
 key Y {
@@ -167,8 +163,8 @@ key Y {
     shift, capslock:                    '\u042a'
     alt:                                '\u00fc'
     alt+shift, alt+capslock:            '\u00dc'
-    fn:                                 '\u0449'
-    fn+shift:                           '\u0429'
+    fn:                                 '\u0448'
+    fn+shift:                           '\u0428'
 }
 
 key U {
@@ -177,8 +173,8 @@ key U {
     shift, capslock:                    '\u0423'
     alt:                                '\u00fa'
     alt+shift, alt+capslock:            '\u00da'
-    fn:                                 '\u044e'
-    fn+shift:                           '\u042e'
+    fn:                                 '\u0449'
+    fn+shift:                           '\u0429'
 }
 
 key I {
@@ -254,12 +250,16 @@ key G {
     label:                              '\u0413'
     base:                               '\u0433'
     shift, capslock:                    '\u0413'
+    fn:                                 '\u0447'
+    fn+shift:                           '\u0427'
 }
 
 key H {
     label:                              '\u0425'
     base:                               '\u0445'
     shift, capslock:                    '\u0425'
+    fn:                                 '\u044e'
+    fn+shift:                           '\u042e'
 }
 
 key J {

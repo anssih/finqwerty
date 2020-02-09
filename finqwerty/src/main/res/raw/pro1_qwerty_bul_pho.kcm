@@ -36,10 +36,6 @@ key WAKEUP {
     alt:                                replace F6
 }
 
-# Y/Z swap
-map key 21 Z
-map key 44 Y
-
 # ROW 1
 
 key ESCAPE {
@@ -61,7 +57,7 @@ key 2 {
 key 3 {
     label, base:                        '3'
     shift:                              '#'
-    fn:                                 '№'
+    fn:                                 '\u2116'
     alt:                                '\u00b3'
     fn+shift, ctrl+fn:                  '\u00a3'
 }
@@ -86,7 +82,7 @@ key 6 {
 
 key 7 {
     label, base:                        '7'
-    shift:                              '§'
+    shift:                              '\u00A7'
     alt:                                '\u00bd'
     fn:                                 '&'
 }
@@ -228,7 +224,7 @@ key BACKSLASH {
     label:                              '\u042e'
     base:                               '\u044e'
     shift, capslock:                    '\u042e'
-    fn:                                 '\'
+    fn:                                 '\\'
     fn+shift:                           '|'
 }
 
@@ -300,12 +296,10 @@ key L {
 }
 
 key APOSTROPHE {
-    label:                              '\''
-    base:                               '\''
-    shift:                              '|'
+    label, base:                        '\''
+    shift, fn:                          '"'
     alt:                                '\u00ac'
     alt+shift, alt+capslock:            '\u00a6'
-    fn:                                 '"'
 }
 
 key ENTER {
