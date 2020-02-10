@@ -213,9 +213,9 @@ key P {
 key SEMICOLON {
     label:                              ';'
     base:                               ';'
-    shift, alt:                         ':'
-    fn:                                 '\u00b7'
-    fn+shift, ctrl+fn:                  '\u00b0'
+    shift, fn:                          ':'
+    alt:                                '\u00b7'
+    alt+shift, alt+capslock:            '\u00b0'
 }
 
 ### ROW 3
@@ -380,17 +380,17 @@ key M {
 key COMMA {
     label:                              ','
     base:                               ','
-    shift, alt:                         '<'
-    fn:                                 '\u00e7'
-    fn+shift, ctrl+fn, fn+capslock:     '\u00c7'
+    shift, fn:                          '<'
+    alt:                                '\u00e7'
+    alt+shift, alt+capslock:            '\u00c7'
 }
 
 key PERIOD {
     label:                              '.'
     base:                               '.'
-    shift, alt:                         '>'
-    fn:                                 '\u0307'
-    fn+shift, ctrl+fn:                  '\u030c'
+    shift, fn:                          '>'
+    alt:                                '\u0307'
+    alt+shift, alt+capslock:            '\u030c'
 }
 
 key DPAD_UP {
