@@ -1,0 +1,406 @@
+# Copyright (C) 2012 The Android Open Source Project
+# Copyright (C) 2020 Bundyo
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+#
+# Bulgarian Phonetic keyboard layout.
+# This is a typical Bulgarian Phonetic keyboard layout.
+#
+
+type OVERLAY
+
+### ROW 1
+
+key ESCAPE {
+    base:                               fallback BACK
+    alt, meta:                          fallback HOME
+    ctrl:                               fallback MENU
+}
+
+key 1 {
+    label:                              '1'
+    base:                               '1'
+    shift:                              '!'
+    alt:                               '\u00a1'
+    alt+shift:                         '\u00b9'
+    fn:			                		'~'
+}
+
+key 2 {
+    label:                              '2'
+    base:                               '2'
+    shift:                              '@'
+    alt:                               '\u00b2'
+    fn:				                	'`'
+}
+
+key 3 {
+    label:                              '3'
+    base:                               '3'
+    shift:                              '\u2116'
+    alt:                                '\u00b3'
+    fn:			                		'\u00a3'
+}
+
+key 4 {
+    label:                              '4'
+    base:                               '4'
+    shift:                              '$'
+    alt:                                '\u00a4'
+    alt+shift:                          '\u00a3'
+    fn:		                			'\u20ac'
+}
+
+key 5 {
+    label:                              '5'
+    base:                               '5'
+    shift:                              '%'
+    alt:                                '\u20ac'
+    fn:		                			'<'
+}
+
+key 6 {
+    label:                              '6'
+    base:                               '6'
+    shift:                              '\u20AC'
+    alt+shift:                          '\u0302'
+    alt:                                '\u00bc'
+    fn:				                	'>'
+}
+
+key 7 {
+    label:                              '7'
+    base:                               '7'
+    shift:                              '\u00A7'
+    alt:                                '\u00bd'
+    fn:			                		'['
+}
+
+key 8 {
+    label:                              '8'
+    base:                               '8'
+    shift:                              '*'
+    alt:                                '\u00be'
+    fn:			                		']'
+}
+
+key 9 {
+    label:                              '9'
+    base:                               '9'
+    shift:                              '('
+    alt:                                '\u2018'
+    fn:					                '{'
+}
+
+key 0 {
+    label:                              '0'
+    base:                               '0'
+    shift:                              ')'
+    alt:                                '\u2019'
+    fn:					                '}'
+}
+
+key DEL {
+    base:			                	fallback DEL
+    shift:        			            fallback FORWARD_DEL
+}
+
+### ROW 2
+
+key Q {
+    label:                              '\u042f'
+    base:                               '\u044f'
+    shift, capslock:                    '\u042f'
+    alt:                                '\u00e4'
+    alt+shift, alt+capslock:            '\u00c4'
+}
+
+key W {
+    label:                              '\u0412'
+    base:                               '\u0432'
+    shift, capslock:                    '\u0412'
+    alt:                                '\u00e5'
+    alt+shift, alt+capslock:            '\u00c5'
+}
+
+key E {
+    label:                              '\u0415'
+    base:                               '\u0435'
+    shift, capslock:                    '\u0415'
+    alt:                                '\u00e9'
+    alt+shift, alt+capslock:            '\u00c9'
+}
+
+key R {
+    label:                              '\u0420'
+    base:                               '\u0440'
+    shift, capslock:                    '\u0420'
+    alt:                                '\u00ae'
+}
+
+key T {
+    label:                              '\u0422'
+    base:                               '\u0442'
+    shift, capslock:                    '\u0422'
+    alt:                                '\u00fe'
+    alt+shift, alt+capslock:            '\u00de'
+}
+
+key Y {
+    label:                              '\u042a'
+    base:                               '\u044a'
+    shift, capslock:                    '\u042a'
+    alt:                                '\u00fc'
+    alt+shift, alt+capslock:            '\u00dc'
+    fn:                                 '\u0448'
+    fn+shift:                           '\u0428'
+}
+
+key U {
+    label:                              '\u0423'
+    base:                               '\u0443'
+    shift, capslock:                    '\u0423'
+    alt:                                '\u00fa'
+    alt+shift, alt+capslock:            '\u00da'
+    fn:                                 '\u0449'
+    fn+shift:                           '\u0429'
+}
+
+key I {
+    label:                              '\u0418'
+    base:                               '\u0438'
+    shift, capslock:                    '\u0418'
+    alt:                                '\u00ed'
+    alt+shift, alt+capslock:            '\u00cd'
+    fn:				                	'+'
+}
+
+key O {
+    label:                              '\u041e'
+    base:                               '\u043e'
+    shift, capslock:                    '\u041e'
+    alt:                                '\u00f3'
+    alt+shift, alt+capslock:            '\u00d3'
+    fn:				                	'-'
+}
+
+key P {
+    label:                              '\u041f'
+    base:                               '\u043f'
+    shift, capslock:                    '\u041f'
+    alt:                                '\u00f6'
+    alt+shift, alt+capslock:            '\u00d6'
+    fn:					                '='
+}
+
+key ENTER {
+    label:                              '\n'
+    base:                               '\n'
+}
+
+### ROW 3
+
+key TAB {
+    label:                              '\t'
+    base:                               '\t'
+}
+
+key A {
+    label:                              '\u0410'
+    base:                               '\u0430'
+    shift, capslock:                    '\u0410'
+    alt:                                '\u00e1'
+    alt+shift, alt+capslock:            '\u00c1'
+}
+
+key S {
+    label:                              '\u0421'
+    base:                               '\u0441'
+    shift, capslock:                    '\u0421'
+    alt:                                '\u00df'
+    alt+shift, alt+capslock:            '\u00a7'
+}
+
+key D {
+    label:                              '\u0414'
+    base:                               '\u0434'
+    shift, capslock:                    '\u0414'
+    alt:                                '\u00f0'
+    alt+shift, alt+capslock:            '\u00d0'
+}
+
+key F {
+    label:                              '\u0424'
+    base:                               '\u0444'
+    shift, capslock:                    '\u0424'
+}
+
+key G {
+    label:                              '\u0413'
+    base:                               '\u0433'
+    shift, capslock:                    '\u0413'
+    fn:                                 '\u0447'
+    fn+shift:                           '\u0427'
+}
+
+key H {
+    label:                              '\u0425'
+    base:                               '\u0445'
+    shift, capslock:                    '\u0425'
+    fn:                                 '\u044e'
+    fn+shift:                           '\u042e'
+}
+
+key J {
+    label:                              '\u0419'
+    base:                               '\u0439'
+    shift, capslock:                    '\u0419'
+    fn:					                '_'
+}
+
+key K {
+    label:                              '\u041a'
+    base:                               '\u043a'
+    shift, capslock:                    '\u041a'
+    fn:					                ';'
+}
+
+key L {
+    label:                              '\u041b'
+    base:                               '\u043b'
+    shift, capslock:                    '\u041b'
+    alt:                                '\u00f8'
+    alt+shift, alt+capslock:            '\u00d8'
+    fn:				                	'"'
+}
+
+key APOSTROPHE {
+    label:                              '\\'
+    base:                               '\\'
+    shift:                              '|'
+    alt:                                '\u00ac'
+    alt+shift, alt+capslock:            '\u00a6'
+    fn:				                	':'
+}
+
+### ROW 4
+
+#key SHIFT_LEFT {
+#}
+
+key Z {
+    label:                              '\u0417'
+    base:                               '\u0437'
+    shift, capslock:                    '\u0417'
+    alt:                                '\u00e6'
+    alt+shift, alt+capslock:            '\u00c6'
+}
+
+key X {
+    label:                              '\u044c'
+    base:                               '\u044c'
+    shift, capslock:                    '\u045d'
+}
+
+key C {
+    label:                              '\u0426'
+    base:                               '\u0446'
+    shift, capslock:                    '\u0426'
+    alt:                                '\u00a9'
+    alt+shift, alt+capslock:            '\u00a2'
+}
+
+key V {
+    label:                              '\u0416'
+    base:                               '\u0436'
+    shift, capslock:                    '\u0416'
+}
+
+key B {
+    label:                              '\u0411'
+    base:                               '\u0431'
+    shift, capslock:                    '\u0411'
+}
+
+key N {
+    label:                              '\u041d'
+    base:                               '\u043d'
+    shift, capslock:                    '\u041d'
+    alt:                                '\u00f1'
+    alt+shift, alt+capslock:            '\u00d1'
+}
+
+key M {
+    label:                              '\u041c'
+    base:                               '\u043c'
+    shift, capslock:                    '\u041c'
+    alt:                                '\u00b5'
+    fn:				                	'\''
+}
+
+key PERIOD {
+    label:                              '.'
+    base:                               '.'
+    shift:                              '?'
+}
+
+key DPAD_UP {
+   base:			                	fallback DPAD_UP
+   fn:				                	fallback PAGE_UP
+}
+
+#key SHIFT_RIGHT {
+#}
+
+### ROW 5
+
+#key CTRL_LEFT {
+#}
+
+#key FUNCTION {
+#}
+
+#key ALT_LEFT {
+#    fn:                                 fallback SHOW_DIALER
+#}
+
+key SPACE {
+    label:                              ' '
+    base:                               ' '
+    alt, meta:                          fallback SEARCH
+    ctrl:                               fallback LANGUAGE_SWITCH
+}
+
+key COMMA {
+    label:                              ','
+    base:                               ','
+    shift:                              '/'
+    alt:                                '\u00e7'
+    alt+shift, alt+capslock:            '\u00c7'
+}
+
+key DPAD_LEFT {
+   base:				                fallback DPAD_LEFT
+   fn:				                	fallback MOVE_HOME
+}
+
+key DPAD_DOWN {
+   base:			                	fallback DPAD_DOWN
+   fn:			                		fallback PAGE_DOWN
+}
+
+key DPAD_RIGHT {
+   base:		                		fallback DPAD_RIGHT
+   fn:			                		fallback MOVE_END
+}

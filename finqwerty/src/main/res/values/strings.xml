@@ -18,6 +18,7 @@
     <string name="keyone_nor_1">FinQwerty BlackBerry KEYone, Norwegian</string>
     <string name="keyone_ger_1">FinQwerty BlackBerry KEYone, German</string>
 
+    <string name="gemini_bul_pho">FinQwerty Gemini PDA, Bulgarian Phonetic</string>
     <string name="gemini_fin_1">FinQwerty Gemini PDA, stock Finnish/Swedish with swapped Ä/Ö</string>
 
     <string name="livmoto_fin_1">FinQwerty Livermorium Moto Mod, Finnish</string>
@@ -26,6 +27,7 @@
     <string name="livmoto_nor_1">FinQwerty Livermorium Moto Mod, Norwegian</string>
     <string name="livmoto_ger_1">FinQwerty Livermorium Moto Mod, German</string>
 
+    <string name="pro1_qwerty_bul_pho">FinQwerty F(x)tec Pro1, Bulgarian Phonetic for physical US QWERTY</string>
     <string name="pro1_qwertz_che_fra">FinQwerty F(x)tec Pro1, Swiss French for physical DE QWERTZ</string>
     <string name="pro1_qwerty_cze_1">FinQwerty F(x)tec Pro1, Czech QWERTY for physical US QWERTY</string>
     <string name="pro1_qwerty_cze_2">FinQwerty F(x)tec Pro1, Czech QWERTZ for physical US QWERTY</string>

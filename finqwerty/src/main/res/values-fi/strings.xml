@@ -43,6 +43,7 @@
     <string name="livmoto_ger_1">FinQwerty Livermorium Moto Mod, saksalainen</string>
     <string name="livmoto_nor_1">FinQwerty Livermorium Moto Mod, norjalainen</string>
     <string name="livmoto_swe_1">FinQwerty Livermorium Moto Mod, ruotsalainen</string>
+    <string name="gemini_bul_pho">FinQwerty Gemini PDA, bulgarialainen foneettiset</string>
     <string name="gemini_fin_1">FinQwerty Gemini PDA, alkuperäinen suomalainen Ä/Ö vaihdettuna</string>
     <string name="pro1_qwerty_dan_1">FinQwerty F(x)tec Pro1, tanskalainen, fyysinen QWERTY</string>
     <string name="pro1_qwerty_fin_1">FinQwerty F(x)tec Pro1, suomalainen, fyysinen QWERTY</string>
@@ -71,5 +72,6 @@
     <string name="pro1_qwerty_ita_1">FinQwerty F(x)tec Pro1, italialainen, fyysinen QWERTY</string>
     <string name="pro1_qwerty_pol_prog">FinQwerty F(x)tec Pro1, puolalainen (ohjelmoijan), fyysinen QWERTY</string>
     <string name="pro1_qwertz_che_fra">FinQwerty F(x)tec Pro1, sveitsiläinen (ranska), fyysinen QWERTZ</string>
+    <string name="pro1_qwerty_bul_pho">FinQwerty F(x)tec Pro1, bulgarialainen foneettiset, fyysinen QWERTY</string>
 
 </resources>
