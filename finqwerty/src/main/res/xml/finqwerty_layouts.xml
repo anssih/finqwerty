@@ -48,6 +48,7 @@
     <keyboard-layout android:name="pro1_qwertz_ger_1" android:label="@string/pro1_qwertz_ger_1" android:keyboardLayout="@raw/pro1_qwertz_ger_1"/>
     <keyboard-layout android:name="pro1_qwertz_hun_1" android:label="@string/pro1_qwertz_hun_1" android:keyboardLayout="@raw/pro1_qwertz_hun_1"/>
     <keyboard-layout android:name="pro1_qwertz_nor_1" android:label="@string/pro1_qwertz_nor_1" android:keyboardLayout="@raw/pro1_qwertz_nor_1"/>
+    <keyboard-layout android:name="pro1_qwertz_por_1" android:label="@string/pro1_qwertz_por_1" android:keyboardLayout="@raw/pro1_qwertz_por_1"/>
     <keyboard-layout android:name="pro1_qwertz_swe_1" android:label="@string/pro1_qwertz_swe_1" android:keyboardLayout="@raw/pro1_qwertz_fin_1"/>
     <keyboard-layout android:name="pro1_qwertz_usa_1" android:label="@string/pro1_qwertz_usa_1" android:keyboardLayout="@raw/pro1_qwertz_usa_1"/>
     <keyboard-layout android:name="pro1_qwertz_usaintl_1" android:label="@string/pro1_qwertz_usaintl_1" android:keyboardLayout="@raw/pro1_qwertz_usaintl_1"/>
