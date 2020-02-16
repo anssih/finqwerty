@@ -239,8 +239,8 @@ def generate_layout(layout, target_dir):
     layout_dir = os.path.join(os.path.dirname(__file__), "finqwerty", "src", "main", "res", "raw")
     source_dir = target_dir if layout.get(IS_SOURCE_GENERATED) else layout_dir
     with \
-    open(os.path.join(source_dir, layout[SOURCE]), 'r') as src, \
-    open(os.path.join(target_dir, layout[NAME]), 'w') as dst:
+    open(os.path.join(source_dir, layout[SOURCE]), 'r', encoding="utf-8") as src, \
+    open(os.path.join(target_dir, layout[NAME]), 'w', encoding="utf-8") as dst:
         remove_this_key = False
         cur_keycode = None
         rules_matched = {REPLACE: [], REMOVE_SCANCODES: [], REMOVE_KEYCODES: []}
