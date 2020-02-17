@@ -9,7 +9,7 @@ map key 16 W
 map key 17 E
 map key 18 R
 map key 19 T
-map key 20 Z
+map key 20 Y
 map key 21 U
 map key 22 I
 map key 23 O
@@ -28,7 +28,7 @@ map key 37 L
 map key 38 SEMICOLON
 map key 40 BACKSLASH
 map key 26 SLASH
-map key 27 Y
+map key 27 Z
 map key 44 X
 map key 45 C
 map key 46 V
