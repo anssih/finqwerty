@@ -186,7 +186,7 @@ key LEFT_BRACKET {
     label:                              '\u00fa' # ú
     base:                               '\u00fa' # ú
     shift:                              '/'
-    capslock:		                    '\u00c5' # Ú
+    capslock:                           '\u00c5' # Ú
     fn:                                 '\u00f7' # ÷
 }
 
