@@ -2,18 +2,17 @@
 
 package fi.onse.qwerty.finnish;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.res.Resources;
 import android.hardware.input.InputManager;
 import android.os.Build;
 import android.os.Parcelable;
-import android.util.ArrayMap;
 import android.util.Log;
 import android.view.InputDevice;
 
 import java.lang.reflect.Constructor;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -85,8 +84,9 @@ class FInputDevice {
              * Find the class via reflection to avoid non-SDK interface warning on Android 9
              * unless this function is *actually* called.
              */
+            @SuppressLint("PrivateApi")
             Class<?> idicls = Class.forName("android.hardware.input.InputDeviceIdentifier");
-            Constructor idictr = idicls.getDeclaredConstructor(String.class, int.class, int.class);
+            Constructor<?> idictr = idicls.getDeclaredConstructor(String.class, int.class, int.class);
             return (Parcelable)idictr.newInstance(descriptor, vendorId, productId);
 
         } catch (Exception e) {

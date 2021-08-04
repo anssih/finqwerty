@@ -17,14 +17,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static fi.onse.qwerty.finnish.MainActivity.directModeMinImiSDK;
-import static fi.onse.qwerty.finnish.MainActivity.directModeMinSDK;
 
 public class PrivBootupNotification extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
 
-        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP) {
-            /* should not get here on Priv */
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP || Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            /* should not get here on non-Priv */
             return;
         }
 
@@ -33,9 +32,9 @@ public class PrivBootupNotification extends BroadcastReceiver {
         }
 
         /* TODO: duplicates MainActivity.java */
-        InputManager inputManager = (InputManager) context.getSystemService(context.INPUT_SERVICE);
+        InputManager inputManager = (InputManager) context.getSystemService(Context.INPUT_SERVICE);
 
-        int devices[] = inputManager.getInputDeviceIds();
+        int[] devices = inputManager.getInputDeviceIds();
         List<FInputDevice> fdevices = new ArrayList<>();
 
         boolean isPriv = false;
@@ -51,7 +50,7 @@ public class PrivBootupNotification extends BroadcastReceiver {
         if (isPriv && !fdevices.isEmpty()) {
             /* TODO: duplicates MainActivity.java */
             final Intent confIntent;
-            if (Build.VERSION.SDK_INT >= directModeMinSDK && Build.VERSION.SDK_INT < directModeMinImiSDK) {
+            if (Build.VERSION.SDK_INT < directModeMinImiSDK) {
                 /* go directly to settings dialog, we know everything */
                 confIntent = new Intent(Settings.ACTION_INPUT_METHOD_SETTINGS);
                 confIntent.putExtra("input_device_identifier", fdevices.get(0).getIdentifier());
@@ -60,7 +59,9 @@ public class PrivBootupNotification extends BroadcastReceiver {
                 confIntent = new Intent(context, MainActivity.class);
             }
 
-            final PendingIntent pendIntent = PendingIntent.getActivity(context, 0, confIntent, 0);
+            final PendingIntent pendIntent = PendingIntent.getActivity(
+                    context, 0,confIntent,
+                    Build.VERSION.SDK_INT >= 23 ? PendingIntent.FLAG_IMMUTABLE : 0);
 
             Notification.Builder mBuilder =
                     new Notification.Builder(context)
@@ -72,7 +73,7 @@ public class PrivBootupNotification extends BroadcastReceiver {
                             .setContentText(context.getString(R.string.layout_boot_notification_text));
 
             NotificationManager mNotificationManager =
-                    (NotificationManager) context.getSystemService(context.NOTIFICATION_SERVICE);
+                    (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
             mNotificationManager.notify(0, mBuilder.build());
         }
 

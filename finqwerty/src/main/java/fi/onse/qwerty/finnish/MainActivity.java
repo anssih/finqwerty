@@ -2,18 +2,16 @@
 
 package fi.onse.qwerty.finnish;
 
+import android.app.Activity;
 import android.content.ComponentName;
 import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.content.res.Resources;
 import android.hardware.input.InputManager;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
-import android.app.Activity;
 import android.provider.Settings;
 import android.text.Html;
-import android.text.Layout;
 import android.text.method.LinkMovementMethod;
 import android.util.Pair;
 import android.view.Menu;
@@ -23,7 +21,6 @@ import android.view.inputmethod.InputMethodInfo;
 import android.view.inputmethod.InputMethodManager;
 import android.view.inputmethod.InputMethodSubtype;
 import android.widget.Button;
-import android.widget.CompoundButton;
 import android.widget.LinearLayout;
 import android.widget.Switch;
 import android.widget.TextView;
@@ -57,7 +54,7 @@ public class MainActivity extends Activity {
         final InputManager inputManager = (InputManager) getSystemService(INPUT_SERVICE);
         final InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE);
 
-        int devices[] = inputManager.getInputDeviceIds();
+        int[] devices = inputManager.getInputDeviceIds();
         List<FInputDevice> fdevices = new ArrayList<>();
 
         boolean hiddenDevices = false;
@@ -89,7 +86,7 @@ public class MainActivity extends Activity {
         TextView belowHelpDirect = (TextView)findViewById(R.id.configure_help_below2);
 
         TextView semiHelp = (TextView)findViewById(R.id.textViewsemi);
-        Button semiButton = (Button)findViewById(R.id.LangInputSettings);
+        Button inpsetbut = (Button)findViewById(R.id.LangInputSettings);
 
         TextView mainTextView = (TextView)findViewById(R.id.mainText);
         mainTextView.setMovementMethod(LinkMovementMethod.getInstance());
@@ -112,7 +109,7 @@ public class MainActivity extends Activity {
                         final List<InputMethodSubtype> imsList = inputMethodManager.getEnabledInputMethodSubtypeList(imi, true);
 
                         if (imsList.isEmpty()) {
-                            imCombos.add(new Pair<InputMethodInfo, InputMethodSubtype>(imi, null));
+                            imCombos.add(new Pair<>(imi, null));
                         } else {
                             for (InputMethodSubtype ims : imsList) {
                                 if (ims.getMode().equalsIgnoreCase("keyboard")) {
@@ -134,7 +131,7 @@ public class MainActivity extends Activity {
 
                         }
                         final String buttontext = String.format(getText(R.string.configure_button_text_direct_imi).toString(), fdev.displayName, vkbName);
-                        configureIntents.add(new Pair<String, Intent>(buttontext, intent));
+                        configureIntents.add(new Pair<>(buttontext, intent));
                     }
 
 
@@ -143,7 +140,7 @@ public class MainActivity extends Activity {
                     final String buttontext = String.format(getText(R.string.configure_button_text_direct).toString(), fdev.displayName);
                     final Intent intent = new Intent(Settings.ACTION_INPUT_METHOD_SETTINGS);
                     intent.putExtra("input_device_identifier", fdev.getIdentifier());
-                    configureIntents.add(new Pair<String, Intent>(buttontext, intent));
+                    configureIntents.add(new Pair<>(buttontext, intent));
                 }
             }
 
@@ -156,11 +153,7 @@ public class MainActivity extends Activity {
                 Button bt = new Button(this);
                 bt.setLayoutParams(params);
                 bt.setText(configureIntent.first);
-                bt.setOnClickListener(new View.OnClickListener() {
-                    public void onClick(View v) {
-                        startActivity(configureIntent.second);
-                    }
-                });
+                bt.setOnClickListener(v -> startActivity(configureIntent.second));
 
                 confButtonsLayout.addView(bt);
             }
@@ -185,18 +178,13 @@ public class MainActivity extends Activity {
 
 
         } else {
-            Button inpsetbut = (Button)findViewById(R.id.LangInputSettings);
             final Intent semiIntent;
             if (Build.VERSION.SDK_INT >= semiModeHardKeybMinSDK) {
                 semiIntent = new Intent(Settings.ACTION_HARD_KEYBOARD_SETTINGS);
             } else {
                 semiIntent = new Intent(Settings.ACTION_INPUT_METHOD_SETTINGS);
             }
-            inpsetbut.setOnClickListener(new View.OnClickListener() {
-                public void onClick(View v) {
-                    startActivity(semiIntent);
-                }
-            });
+            inpsetbut.setOnClickListener(v -> startActivity(semiIntent));
 
             directLayout.setVisibility(View.GONE);
             semiLayout.setVisibility(View.VISIBLE);
@@ -209,17 +197,15 @@ public class MainActivity extends Activity {
             belowHelpDirect.setText(R.string.configure_help_below_imi);
             belowHelpSemi.setText(R.string.configure_help_below_imi);
             semiHelp.setText(R.string.configure_help_semi_imi);
-            semiButton.setText(R.string.configure_button_text_semi_imi);
+            inpsetbut.setText(R.string.configure_button_text_semi_imi);
         }
 
         Button hideSwitch = (Button)findViewById(R.id.hideSwitch);
         hideSwitch.setEnabled(isLauncherIconEnabled());
-        hideSwitch.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                setLauncherIconEnabled(false);
-                Toast.makeText(MainActivity.this, "Removing FinQwerty from launcher", Toast.LENGTH_LONG).show();
-                finish();
-            }
+        hideSwitch.setOnClickListener(v -> {
+            setLauncherIconEnabled(false);
+            Toast.makeText(MainActivity.this, "Removing FinQwerty from launcher", Toast.LENGTH_LONG).show();
+            finish();
         });
 
         if (isPriv) {
@@ -228,11 +214,7 @@ public class MainActivity extends Activity {
 
             Switch bootSwitch = (Switch)findViewById(R.id.bootSwitch);
             bootSwitch.setChecked(isBootNotificationEnabled());
-            bootSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-                public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                    setBootNotificationEnabled(isChecked);
-                }
-            });
+            bootSwitch.setOnCheckedChangeListener((buttonView, isChecked) -> setBootNotificationEnabled(isChecked));
 
             if (Build.VERSION.SDK_INT >= 24) {
                 /* e.g. BlackBerry KEYone or KEY2 */
@@ -261,16 +243,15 @@ public class MainActivity extends Activity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.action_changelog:
-                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(CHANGELOG)));
-                return true;
-            case R.id.action_website:
-                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(WEBSITE)));
-                return true;
-            default:
-                return super.onOptionsItemSelected(item);
+        int itemId = item.getItemId();
+        if (itemId == R.id.action_changelog) {
+            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(CHANGELOG)));
+            return true;
+        } else if (itemId == R.id.action_website) {
+            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(WEBSITE)));
+            return true;
         }
+        return super.onOptionsItemSelected(item);
     }
 
     private boolean isBootNotificationEnabled() {
@@ -289,6 +270,7 @@ public class MainActivity extends Activity {
         ComponentName ourName = new ComponentName(this, this.getClass());
         return p.getComponentEnabledSetting(ourName) != PackageManager.COMPONENT_ENABLED_STATE_DISABLED;
     }
+    @SuppressWarnings("SameParameterValue")
     private void setLauncherIconEnabled(boolean enable) {
         PackageManager p = getPackageManager();
         ComponentName ourName = new ComponentName(this, this.getClass());
