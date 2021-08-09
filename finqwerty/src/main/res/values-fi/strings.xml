@@ -76,5 +76,6 @@
     <string name="pro1_qwertz_por_1">FinQwerty F(x)tec Pro1, portugalilainen, fyysinen QWERTZ</string>
     <string name="pro1_qwertz_ell_1">FinQwerty F(x)tec Pro1, kreikkalainen, fyysinen QWERTZ</string>
     <string name="pro1_qwerty_ukr_1">FinQwerty F(x)tec Pro1, ukrainalainen, fyysinen QWERTY</string>
+    <string name="pro1_qwerty_svk_1">FinQwerty F(x)tec Pro1, slovakialainen, fyysinen QWERTY</string>
 
 </resources>

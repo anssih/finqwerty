@@ -4,7 +4,7 @@ Various keyboard layouts for the physical QWERTY keyboards of the following Andr
 
 - BlackBerry KEYone **Android 7.1 only** (Danish, Finnish, German, Norwegian, Swedish)
 - BlackBerry Priv (Danish, Finnish, German, Norwegian, Swedish)
-- F(x)tec Pro1 (Bulgarian, Czech, Danish, Finnish, German, Greek, Hungarian, Italian, Norwegian, Polish, Portuguese, Swedish, Swiss French, Ukrainian, U.S., U.S. international)
+- F(x)tec Pro1 (Bulgarian, Czech, Danish, Finnish, German, Greek, Hungarian, Italian, Norwegian, Polish, Portuguese, Slovakian, Swedish, Swiss French, Ukrainian, U.S., U.S. international)
 - Gemini PDA (Bulgarian, Finnish, Swedish)
 - Livermorium Keyboard Moto Mod (Danish, Finnish, German, Norwegian, Swedish)
 - Motorola Droid 4 (Finnish, Swedish)
