@@ -134,6 +134,7 @@ key W {
     base:                               'w'
     shift, capslock:                    'W'
     fn:                                 '\u0302'
+    alt:                                '^'
 }
 
 key E {

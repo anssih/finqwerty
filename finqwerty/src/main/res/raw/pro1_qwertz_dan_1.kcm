@@ -121,6 +121,7 @@ key W {
     base:                               'w'
     shift, capslock:                    'W'
     fn:                                 '\u0302'
+    alt:                                '^'
 }
 
 key E {
@@ -181,6 +182,7 @@ key LEFT_BRACKET {
     base:                               '\u00e5'
     shift, capslock:                    '\u00c5'
     fn:                                 '\u0303'
+    alt:                                '~'
 }
 
 key APOSTROPHE {
