@@ -98,8 +98,9 @@ key 0 {
 }
 key PLUS {
     label, base:                        '\u00df'
-    shift:                              '\u1e9e'
+    shift:                              '?'
     fn:                                 '?'
+    alt:                                '\u1e9e'
 }
 key GRAVE {
     label, base:                        '\u0301'
