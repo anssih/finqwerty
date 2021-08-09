@@ -9,47 +9,6 @@ type OVERLAY
 
 # both yellow-arrow keys are 464 (FUNCTION)
 
-#map key 12 PLUS (EQUALS?)
-#map key 13 GRAVE
-map key 111 PLUS
-
-map key 41 Q
-map key 16 W
-map key 17 E
-map key 18 R
-map key 19 T
-map key 20 Y
-map key 21 U
-map key 22 I
-map key 23 O
-map key 24 P
-map key 38 SEMICOLON
-
-map key 26 BACKSLASH
-map key 43 A
-map key 30 S
-map key 31 D
-map key 32 F
-map key 33 G
-map key 34 H
-map key 35 J
-map key 36 K
-map key 37 L
-map key 40 APOSTROPHE
-
-map key 25 LEFT_BRACKET
-map key 39 RIGHT_BRACKET
-map key 27 Z
-map key 44 X
-map key 45 C
-map key 46 V
-map key 47 B
-map key 48 N
-map key 49 M
-map key 50 COMMA
-map key 51 PERIOD
-map key 52 SLASH
-
 # orig BACK
 map key 158 ESCAPE
 
@@ -153,7 +112,7 @@ key Q {
     label:                              'Q'
     base:                               'q'
     shift, capslock:                    'Q'
-    fn:                                 '\'
+    fn:                                 '\\'
 }
 
 key W {
@@ -208,14 +167,6 @@ key LEFT_BRACKET {
     fn:                                 '\u00f7' # ÷
 }
 
-key APOSTROPHE {
-    label:                              '\u00a7' # §
-    base:                               '\u00a7 # §
-    shift:                              '!'  # !
-    capslock:                           '\u00a7'  # §
-    fn:                                 '\u00df'  # ß
-}
-
 # ROW 3
 
 key A {
@@ -268,7 +219,7 @@ key L {
     fn:                                 '\u0141' # Ł
 }
 
-key SEMICOLON {
+key APOSTROPHE {
     label:                              '\u00f4' # ô
     base:                               '\u00f4' # ô
     shift, capslock:                    '"'
@@ -288,6 +239,14 @@ key BACKSLASH {
 key SLASH {
     label, base:                        '<'
     shift, fn:                          '>'
+}
+
+key RIGHT_BRACKET {
+    label:                              '\u00a7' # §
+    base:                               '\u00a7' # §
+    shift:                              '!'  # !
+    capslock:                           '\u00a7'  # §
+    fn:                                 '\u00df'  # ß
 }
 
 key Z {
@@ -339,9 +298,4 @@ key PERIOD {
     label:                              '.'
     base:                               '.'
     shift, fn:                          ':'
-}
-
-key ESCAPE {
-    base:                               fallback BACK
-    fn:                                 fallback HOME
 }
