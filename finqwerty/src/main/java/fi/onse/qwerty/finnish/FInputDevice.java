@@ -82,7 +82,7 @@ class FInputDevice {
         try {
             /*
              * Find the class via reflection to avoid non-SDK interface warning on Android 9
-             * unless this function is *actually* called.
+             * unless this function is *actually* called (and it is not actually called).
              */
             @SuppressLint("PrivateApi")
             Class<?> idicls = Class.forName("android.hardware.input.InputDeviceIdentifier");
