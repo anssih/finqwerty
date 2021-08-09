@@ -101,6 +101,7 @@ key 6 {
     shift:                              '^'
     fn:                                 '&'
     fn+shift, ctrl+fn:                  '\u00b6'
+    alt+shift:                          '\u0302'
 }
 key 7 {
     label, base:                        '7'

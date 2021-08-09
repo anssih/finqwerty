@@ -47,6 +47,7 @@ key 6 {
     label, base:                        '6'
     shift:                              '&'
     fn:                                 '^'
+    alt+shift:                          '\u0302'
 }
 
 key 7 {

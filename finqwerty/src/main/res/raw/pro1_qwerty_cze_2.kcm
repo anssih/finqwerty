@@ -68,6 +68,7 @@ key 6 {
     capslock:                           '\u017d'
     shift:                              '6'
     fn:                                 '^'
+    alt+shift:                          '\u0302'
 }
 key 7 {
     label:                              '7'
