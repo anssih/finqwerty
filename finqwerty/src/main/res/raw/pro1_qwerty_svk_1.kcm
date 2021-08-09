@@ -51,11 +51,24 @@ map key 51 PERIOD
 map key 52 SLASH
 
 # orig BACK
-#map key 158 ESCAPE
+map key 158 ESCAPE
 
-key GRAVE {
-    label, base:                        ';' # ;
-    shift, fn:                          '\u030a' # °
+# orig SYM but SYM does not do anything at the moment
+# so use as back/wakeup for now
+map key 249 WAKEUP
+
+# map alt+sym = F6 (which signals keyboard open), allowing one to press alt+sym
+# to trigger enabling keyboard backlight and screen rotation as sometimes the
+# Pro1 stock OS seems to lose the keyboard open state
+key WAKEUP {
+    alt:                                replace F6
+}
+
+# ROW 1
+
+key ESCAPE {
+    base:                               fallback BACK
+    fn:                                 replace HOME
 }
 
 key 1 {
@@ -130,6 +143,11 @@ key EQUALS {
 }
 
 # ROW 2
+
+key GRAVE {
+    label, base:                        ';' # ;
+    shift, fn:                          '\u030a' # °
+}
 
 key Q {
     label:                              'Q'
