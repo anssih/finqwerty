@@ -133,7 +133,7 @@ key 0 {
 key MINUS {
     label, base:                        '='
     shift:                              '%'
-    fn:                                 '\u308' # ¨
+    fn:                                 '\u0308' # ¨
 }
 key EQUALS {
     label:                              '\u030c' # ´
