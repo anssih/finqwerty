@@ -125,6 +125,60 @@ USINTL_POL_PROG_REPLACE = [
     ("u00d1", "u0143"),  # Ñ to Ń
 ]
 
+# map Pro1 keycodes to Pro1 X keycodes
+PRO1_PRO1X_REPLACE = [
+    ("map key 41 ", "map key 16 "),
+    ("map key 16 ", "map key 17 "),
+    ("map key 17 ", "map key 18 "),
+    ("map key 18 ", "map key 19 "),
+    ("map key 19 ", "map key 20 "),
+    ("map key 20 ", "map key 21 "),
+    ("map key 21 ", "map key 22 "),
+    ("map key 22 ", "map key 23 "),
+    ("map key 23 ", "map key 24 "),
+    ("map key 24 ", "map key 25 "),
+    ("map key 25 ", "map key 26 "),
+    ("map key 39 ", "map key 27 "),
+    ("map key 43 ", "map key 30 "),
+    ("map key 30 ", "map key 31 "),
+    ("map key 31 ", "map key 32 "),
+    ("map key 32 ", "map key 33 "),
+    ("map key 33 ", "map key 34 "),
+    ("map key 34 ", "map key 35 "),
+    ("map key 35 ", "map key 36 "),
+    ("map key 36 ", "map key 37 "),
+    ("map key 37 ", "map key 38 "),
+    ("map key 38 ", "map key 39 "),
+    ("map key 26 ", "map key 41 "),
+    ("map key 27 ", "map key 44 "),
+    ("map key 44 ", "map key 45 "),
+    ("map key 45 ", "map key 46 "),
+    ("map key 46 ", "map key 47 "),
+    ("map key 47 ", "map key 48 "),
+    ("map key 48 ", "map key 49 "),
+    ("map key 49 ", "map key 50 "),
+    ("map key 50 ", "map key 51 "),
+    ("map key 51 ", "map key 52 "),
+    ("map key 52 ", "map key 53 "),
+]
+
+# for Pro1 X autogeneration
+QWERTZ_LAYOUTS = [
+    "cze_1",
+    "cze_2",
+    "che_fra",
+    "dan_1",
+    "ell_1",
+    "fin_1",
+    "ger_1",
+    "hun_1",
+    "nor_1",
+    "por_1",
+    "usa_1",
+    "usaintl_1",
+    "usaintl_fndead",
+]
+
 GENERATED_LAYOUTS = [
     {
         NAME: "pro1_qwerty_cze_1.kcm",
@@ -223,6 +277,12 @@ key X {
 }
 """,
     },
+] + [
+    {
+        NAME: f"pro1x_qwertz_{name}.kcm",
+        SOURCE: f"pro1_qwertz_{name}.kcm",
+        REPLACE: PRO1_PRO1X_REPLACE,
+    } for name in QWERTZ_LAYOUTS
 ]
 
 def expand_replacement(rule):

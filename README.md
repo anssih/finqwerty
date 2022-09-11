@@ -5,6 +5,7 @@ Various keyboard layouts for the physical QWERTY keyboards of the following Andr
 - BlackBerry KEYone **Android 7.1 only** (Danish, Finnish, German, Norwegian, Swedish)
 - BlackBerry Priv (Danish, Finnish, German, Norwegian, Swedish)
 - F(x)tec Pro1 (Bulgarian, Czech, Danish, Finnish, German, Greek, Hungarian, Italian, Norwegian, Polish, Portuguese, Slovakian, Swedish, Swiss French, Ukrainian, U.S., U.S. international)
+- F(x)tec Pro1 X (Czech, Danish, Finnish, German, Greek, Hungarian, Norwegian, Portuguese, Swedish, Swiss French, U.S., U.S. international)
 - Gemini PDA (Bulgarian, Finnish, Swedish)
 - Livermorium Keyboard Moto Mod (Danish, Finnish, German, Norwegian, Swedish)
 - Motorola Droid 4 (Finnish, Swedish)
@@ -34,7 +35,7 @@ export ANDROID_HOME="$HOME/Android/Sdk"
 
 ## Layout files
 
-Some of the Pro1 layouts (fin/nor/swe and cze qwerty) are generated from other layouts automatically by `generate_layouts.py`
+Some of the Pro1 layouts (e.g. fin/nor/swe, cze qwerty) and all Pro1 QWERTZ layouts are generated from other layouts automatically by `generate_layouts.py`
 during the build process and are therefore not found in this repository.
 
 For convenience, all the `.kcm` files, including automatically generated ones, from the latest FinQwerty release can be found here:

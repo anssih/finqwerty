@@ -57,6 +57,22 @@
     <string name="pro1_qwertz_usaintl_1">FinQwerty F(x)tec Pro1, U.S. intl. for physical DE QWERTZ</string>
     <string name="pro1_qwertz_usaintl_fndead">FinQwerty F(x)tec Pro1, U.S. intl. with Fn dead keys for physical DE QWERTZ</string>
 
+
+    <string name="pro1x_qwertz_che_fra">FinQwerty F(x)tec Pro1 X, Swiss French for physical DE QWERTZ</string>
+    <string name="pro1x_qwertz_cze_1">FinQwerty F(x)tec Pro1 X, Czech QWERTY for physical DE QWERTZ</string>
+    <string name="pro1x_qwertz_cze_2">FinQwerty F(x)tec Pro1 X, Czech QWERTZ for physical DE QWERTZ</string>
+    <string name="pro1x_qwertz_dan_1">FinQwerty F(x)tec Pro1 X, Danish for physical DE QWERTZ</string>
+    <string name="pro1x_qwertz_ell_1">FinQwerty F(x)tec Pro1 X, Greek for physical DE QWERTZ</string>
+    <string name="pro1x_qwertz_fin_1">FinQwerty F(x)tec Pro1 X, Finnish for physical DE QWERTZ</string>
+    <string name="pro1x_qwertz_ger_1">FinQwerty F(x)tec Pro1 X, German for physical DE QWERTZ</string>
+    <string name="pro1x_qwertz_hun_1">FinQwerty F(x)tec Pro1 X, Hungarian for physical DE QWERTZ</string>
+    <string name="pro1x_qwertz_nor_1">FinQwerty F(x)tec Pro1 X, Norwegian for physical DE QWERTZ</string>
+    <string name="pro1x_qwertz_por_1">FinQwerty F(x)tec Pro1 X, Portuguese for physical DE QWERTZ</string>
+    <string name="pro1x_qwertz_swe_1">FinQwerty F(x)tec Pro1 X, Swedish for physical DE QWERTZ</string>
+    <string name="pro1x_qwertz_usa_1">FinQwerty F(x)tec Pro1 X, U.S. for physical DE QWERTZ</string>
+    <string name="pro1x_qwertz_usaintl_1">FinQwerty F(x)tec Pro1 X, U.S. intl. for physical DE QWERTZ</string>
+    <string name="pro1x_qwertz_usaintl_fndead">FinQwerty F(x)tec Pro1 X, U.S. intl. with Fn dead keys for physical DE QWERTZ</string>
+
     <string name="empty_layout">FinQwerty None (stock layout)</string>
 
     <string name="title_activity_main" translatable="false">FinQwerty</string>
