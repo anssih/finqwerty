@@ -43,7 +43,7 @@
     <string name="livmoto_ger_1">FinQwerty Livermorium Moto Mod, saksalainen</string>
     <string name="livmoto_nor_1">FinQwerty Livermorium Moto Mod, norjalainen</string>
     <string name="livmoto_swe_1">FinQwerty Livermorium Moto Mod, ruotsalainen</string>
-    <string name="gemini_bul_pho">FinQwerty Gemini PDA, bulgarialainen foneettiset</string>
+    <string name="gemini_bul_pho">FinQwerty Gemini PDA, bulgarialainen (foneettinen)</string>
     <string name="gemini_fin_1">FinQwerty Gemini PDA, alkuperäinen suomalainen Ä/Ö vaihdettuna</string>
     <string name="pro1_qwerty_dan_1">FinQwerty F(x)tec Pro1, tanskalainen, fyysinen QWERTY</string>
     <string name="pro1_qwerty_fin_1">FinQwerty F(x)tec Pro1, suomalainen, fyysinen QWERTY</string>
@@ -77,5 +77,22 @@
     <string name="pro1_qwertz_ell_1">FinQwerty F(x)tec Pro1, kreikkalainen, fyysinen QWERTZ</string>
     <string name="pro1_qwerty_ukr_1">FinQwerty F(x)tec Pro1, ukrainalainen, fyysinen QWERTY</string>
     <string name="pro1_qwerty_svk_1">FinQwerty F(x)tec Pro1, slovakialainen, fyysinen QWERTY</string>
+
+    <string name="pro1x_qwertz_dan_1">FinQwerty F(x)tec Pro1 X, tanskalainen, fyysinen QWERTZ</string>
+    <string name="pro1x_qwertz_fin_1">FinQwerty F(x)tec Pro1 X, suomalainen, fyysinen QWERTZ</string>
+    <string name="pro1x_qwertz_nor_1">FinQwerty F(x)tec Pro1 X, tanskalainen, fyysinen QWERTZ</string>
+    <string name="pro1x_qwertz_swe_1">FinQwerty F(x)tec Pro1 X, ruotsalainen, fyysinen QWERTZ</string>
+    <string name="pro1x_qwertz_usa_1">FinQwerty F(x)tec Pro1 X, amerikkalainen, fyysinen QWERTZ</string>
+    <string name="pro1x_qwertz_ger_1">FinQwerty F(x)tec Pro1 X, saksalainen, fyysinen QWERTZ</string>
+    <string name="pro1x_qwertz_usaintl_1">FinQwerty F(x)tec Pro1 X, amerikkalainen (kansainvälinen), tarkenäppäimillä, fyysinen QWERTZ</string>
+    <string name="pro1x_qwertz_cze_1">FinQwerty F(x)tec Pro1 X, tšekkiläinen QWERTY, fyysinen QWERTZ</string>
+    <string name="pro1x_qwertz_cze_2">FinQwerty F(x)tec Pro1 X, tšekkiläinen QWERTZ, fyysinen QWERTZ</string>
+    <string name="pro1x_qwertz_hun_1">FinQwerty F(x)tec Pro1 X, unkarilainen, fyysinen QWERTZ</string>
+    <string name="pro1x_qwertz_usaintl_fndead">FinQwerty F(x)tec Pro1 X, amerikkalainen (kansainvälinen), Fn-tarkenäppäimillä, fyysinen QWERTZ</string>
+    <string name="pro1x_qwertz_che_fra">FinQwerty F(x)tec Pro1 X, sveitsiläinen (ranska), fyysinen QWERTZ</string>
+    <string name="pro1x_qwertz_por_1">FinQwerty F(x)tec Pro1 X, portugalilainen, fyysinen QWERTZ</string>
+    <string name="pro1x_qwertz_ell_1">FinQwerty F(x)tec Pro1 X, kreikkalainen, fyysinen QWERTZ</string>
+    <string name="pro1x_qwerty_cze_2">FinQwerty F(x)tec Pro1 X, tšekkiläinen QWERTZ, fyysinen QWERTY</string>
+    <string name="pro1x_qwerty_usa_1">FinQwerty F(x)tec Pro1 X, amerikkalainen, fyysinen QWERTY</string>
 
 </resources>
