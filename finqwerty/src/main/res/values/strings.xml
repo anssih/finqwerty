@@ -73,6 +73,9 @@
     <string name="pro1x_qwertz_usaintl_1">FinQwerty F(x)tec Pro1 X, U.S. intl. for physical DE QWERTZ</string>
     <string name="pro1x_qwertz_usaintl_fndead">FinQwerty F(x)tec Pro1 X, U.S. intl. with Fn dead keys for physical DE QWERTZ</string>
 
+    <string name="pro1x_qwerty_cze_2">FinQwerty F(x)tec Pro1 X, Czech QWERTZ for physical US QWERTY</string>
+    <string name="pro1x_qwerty_usa_1">FinQwerty F(x)tec Pro1 X, U.S. for physical US QWERTY</string>
+
     <string name="empty_layout">FinQwerty None (stock layout)</string>
 
     <string name="title_activity_main" translatable="false">FinQwerty</string>

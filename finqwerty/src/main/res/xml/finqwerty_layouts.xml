@@ -71,6 +71,9 @@
     <keyboard-layout android:name="pro1x_qwertz_usaintl_1" android:label="@string/pro1x_qwertz_usaintl_1" android:keyboardLayout="@raw/pro1x_qwertz_usaintl_1"/>
     <keyboard-layout android:name="pro1x_qwertz_usaintl_fndead" android:label="@string/pro1x_qwertz_usaintl_fndead" android:keyboardLayout="@raw/pro1x_qwertz_usaintl_fndead"/>
 
+    <keyboard-layout android:name="pro1x_qwerty_cze_2" android:label="@string/pro1x_qwerty_cze_2" android:keyboardLayout="@raw/pro1x_qwerty_cze_2"/>
+    <keyboard-layout android:name="pro1x_qwerty_usa_1" android:label="@string/pro1x_qwerty_usa_1" android:keyboardLayout="@raw/pro1x_qwerty_usa_1"/>
+
     <keyboard-layout android:name="empty" android:label="@string/empty_layout" android:keyboardLayout="@raw/empty"/>
 
 </keyboard-layouts>
