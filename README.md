@@ -6,7 +6,7 @@ Various keyboard layouts for the physical QWERTY keyboards of the following Andr
 - BlackBerry Priv (Danish, Finnish, German, Norwegian, Swedish)
 - F(x)tec Pro1 (Bulgarian, Czech, Danish, Finnish, German, Greek, Hungarian, Italian, Norwegian, Polish, Portuguese, Slovakian, Swedish, Swiss French, Ukrainian, U.S., U.S. international)
 - F(x)tec Pro1 X (Czech, Danish, Finnish, German, Greek, Hungarian, Norwegian, Portuguese, Swedish, Swiss French, U.S., U.S. international)
-- Gemini PDA (Bulgarian, Finnish, Swedish)
+- Gemini PDA / Cosmo Communicator (Bulgarian, Finnish, Swedish)
 - Livermorium Keyboard Moto Mod (Danish, Finnish, German, Norwegian, Swedish)
 - Motorola Droid 4 (Finnish, Swedish)
 - Motorola Photon Q 4G (Finnish, Swedish)
