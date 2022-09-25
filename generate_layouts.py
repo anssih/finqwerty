@@ -218,6 +218,16 @@ GENERATED_LAYOUTS = [
         REPLACE: DAN_SWE_REPLACE,
     },
     {
+        NAME: "pro1x_qwerty_fin_1.kcm",
+        SOURCE: "pro1x_qwerty_dan_1.kcm",
+        REPLACE: DAN_SWE_REPLACE,
+    },
+    {
+        NAME: "pro1x_qwerty_nor_1.kcm",
+        SOURCE: "pro1x_qwerty_dan_1.kcm",
+        REPLACE: DAN_NOR_REPLACE,
+    },
+    {
         NAME: "pro1_qwerty_usaintl_fndead.kcm",
         SOURCE: "pro1_qwerty_usaintl_1.kcm",
         REPLACE: USINTL_ALTGR_REPLACE_APOSTROPHE+

@@ -93,6 +93,10 @@
     <string name="pro1x_qwertz_por_1">FinQwerty F(x)tec Pro1 X, portugalilainen, fyysinen QWERTZ</string>
     <string name="pro1x_qwertz_ell_1">FinQwerty F(x)tec Pro1 X, kreikkalainen, fyysinen QWERTZ</string>
     <string name="pro1x_qwerty_cze_2">FinQwerty F(x)tec Pro1 X, tšekkiläinen QWERTZ, fyysinen QWERTY</string>
+    <string name="pro1x_qwerty_dan_1">FinQwerty F(x)tec Pro1 X, tanskalainen, fyysinen QWERTY</string>
+    <string name="pro1x_qwerty_fin_1">FinQwerty F(x)tec Pro1 X, suomalainen, fyysinen QWERTY</string>
+    <string name="pro1x_qwerty_nor_1">FinQwerty F(x)tec Pro1 X, norjalainen, fyysinen QWERTY</string>
+    <string name="pro1x_qwerty_swe_1">FinQwerty F(x)tec Pro1 X, ruotsalainen, fyysinen QWERTY</string>
     <string name="pro1x_qwerty_usa_1">FinQwerty F(x)tec Pro1 X, amerikkalainen, fyysinen QWERTY</string>
 
 </resources>
