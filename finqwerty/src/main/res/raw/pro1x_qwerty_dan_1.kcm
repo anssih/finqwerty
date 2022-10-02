@@ -5,17 +5,6 @@ type OVERLAY
 # orig BACK
 map key 158 ESCAPE
 
-# orig SYM but SYM does not do anything at the moment
-# so use as back/wakeup for now
-map key 249 WAKEUP
-
-# map alt+sym = F6 (which signals keyboard open), allowing one to press alt+sym
-# to trigger enabling keyboard backlight and screen rotation as sometimes the
-# Pro1 stock OS seems to lose the keyboard open state
-key WAKEUP {
-    alt:                                replace F6
-}
-
 # ROW 1
 
 key 1 {

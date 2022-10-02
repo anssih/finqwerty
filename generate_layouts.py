@@ -292,6 +292,11 @@ key X {
         NAME: f"pro1x_qwertz_{name}.kcm",
         SOURCE: f"pro1_qwertz_{name}.kcm",
         REPLACE: PRO1_PRO1X_REPLACE,
+        # Remove Sym = WAKEUP assignment, it does not work on Pro1X stock OS
+        # and the Sym has some stock functionality (keyboard layout setup).
+        REMOVE_SCANCODES: [
+            249, # Sym
+        ],
     } for name in QWERTZ_LAYOUTS
 ]
 
