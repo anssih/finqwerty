@@ -78,6 +78,11 @@
     <keyboard-layout android:name="pro1x_qwerty_cze_2" android:label="@string/pro1x_qwerty_cze_2" android:keyboardLayout="@raw/pro1x_qwerty_cze_2"/>
     <keyboard-layout android:name="pro1x_qwerty_usa_1" android:label="@string/pro1x_qwerty_usa_1" android:keyboardLayout="@raw/pro1x_qwerty_usa_1"/>
 
+    <keyboard-layout android:name="pro1x_scandic_dan_1" android:label="@string/pro1x_scandic_dan_1" android:keyboardLayout="@raw/pro1x_scandic_dan_1"/>
+    <keyboard-layout android:name="pro1x_scandic_fin_1" android:label="@string/pro1x_scandic_fin_1" android:keyboardLayout="@raw/pro1x_scandic_fin_1"/>
+    <keyboard-layout android:name="pro1x_scandic_nor_1" android:label="@string/pro1x_scandic_nor_1" android:keyboardLayout="@raw/pro1x_scandic_nor_1"/>
+    <keyboard-layout android:name="pro1x_scandic_swe_1" android:label="@string/pro1x_scandic_swe_1" android:keyboardLayout="@raw/pro1x_scandic_fin_1"/>
+
     <keyboard-layout android:name="empty" android:label="@string/empty_layout" android:keyboardLayout="@raw/empty"/>
 
 </keyboard-layouts>

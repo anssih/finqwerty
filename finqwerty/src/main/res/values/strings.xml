@@ -80,6 +80,11 @@
     <string name="pro1x_qwerty_swe_1">FinQwerty F(x)tec Pro1 X, Swedish for physical US QWERTY</string>
     <string name="pro1x_qwerty_usa_1">FinQwerty F(x)tec Pro1 X, U.S. for physical US QWERTY</string>
 
+    <string name="pro1x_scandic_dan_1">FinQwerty F(x)tec Pro1 X, Danish for physical Scandic QWERTY</string>
+    <string name="pro1x_scandic_fin_1">FinQwerty F(x)tec Pro1 X, Finnish for physical Scandic QWERTY</string>
+    <string name="pro1x_scandic_nor_1">FinQwerty F(x)tec Pro1 X, Norwegian for physical Scandic QWERTY</string>
+    <string name="pro1x_scandic_swe_1">FinQwerty F(x)tec Pro1 X, Swedish for physical Scandic QWERTY</string>
+
     <string name="empty_layout">FinQwerty None (stock layout)</string>
 
     <string name="title_activity_main" translatable="false">FinQwerty</string>
