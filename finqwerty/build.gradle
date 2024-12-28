@@ -1,14 +1,15 @@
 apply plugin: 'com.android.application'
 
-def generatedLayoutsResDir = new File("$buildDir/generated/layouts")
+def generatedLayoutsBuildDir = layout.buildDirectory.get()
+def generatedLayoutsResDir = new File("$generatedLayoutsBuildDir/generated/layouts")
 def generatedLayoutsRawDir = new File("$generatedLayoutsResDir/raw")
 
 android {
-    compileSdkVersion 30
+    compileSdkVersion 35
 
     defaultConfig {
         minSdkVersion 16
-        targetSdkVersion 30
+        targetSdkVersion 35
         versionCode 38
         versionName "1.6.1"
     }

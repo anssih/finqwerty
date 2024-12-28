@@ -17,6 +17,7 @@
         android:label="@string/app_name">
         <receiver
             android:name=".KeyboardLayoutsReceiver"
+            android:exported="true"
             android:label="@string/title_activity_main">
             <intent-filter>
                 <action android:name="android.hardware.input.action.QUERY_KEYBOARD_LAYOUTS" />
@@ -28,6 +29,7 @@
         </receiver>
 
         <receiver android:name=".PrivBootupNotification"
+            android:exported="true"
             android:enabled="false">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
@@ -36,6 +38,7 @@
 
         <activity
             android:name=".MainActivity"
+            android:exported="true"
             android:label="@string/title_activity_main">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
