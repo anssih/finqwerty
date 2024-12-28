@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="fi.onse.qwerty.finnish">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <!-- technically true, but we all keyboards we support are usable only
 	 touchscreen devices -->

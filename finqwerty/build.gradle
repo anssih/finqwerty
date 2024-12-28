@@ -14,6 +14,7 @@ android {
     }
 
     sourceSets.main.res.srcDirs += generatedLayoutsResDir
+    namespace 'fi.onse.qwerty.finnish'
 }
 
 task generateLayouts(type: Exec) {
