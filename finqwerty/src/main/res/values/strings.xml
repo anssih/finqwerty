@@ -92,7 +92,7 @@
     <string name="configure_help_semi"><![CDATA[You can configure your physical keyboard layout in the \"Language & input\" section of Android Settings, by selecting the first item under the \"Physical keyboard\" heading there.]]></string>
     <string name="configure_button_text_semi">Language &amp; input settings</string>
 
-    <string name="configure_help_semi_imi"><![CDATA[You can configure your physical keyboard layout corresponding to each virtual keyboard in the Physical keyboard section of Android settings.]]></string>
+    <string name="configure_help_semi_imi"><![CDATA[You can configure your physical keyboard layout in the Physical keyboard section of Android settings.]]></string>
     <string name="configure_button_text_semi_imi">Physical keyboard settings</string>
 
     <string name="configure_help_direct">Open the physical keyboard layout configuration dialog:</string>

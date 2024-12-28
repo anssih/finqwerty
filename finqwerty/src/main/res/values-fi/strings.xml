@@ -37,7 +37,7 @@
     <string name="configure_button_text_direct_imi"><![CDATA[Valitse näppäimistön %1$s asettelu kun virtuaalinäppäimistö "%2$s" on käytössä]]></string>
     <string name="configure_button_text_semi_imi">Fyysisen näppäimistön asetukset</string>
     <string name="configure_help_below_imi"><![CDATA[FinQwerty-asettelut alkavat "FinQwerty"-sanalla aakkosellisella luettelossa.]]></string>
-    <string name="configure_help_semi_imi"><![CDATA[Voit asettaa fyysisen näppäimistön asettelun eri virtuaalinäppäimistöille Androidin asetusten Fyysinen näppäimistö -kohdasta.]]></string>
+    <string name="configure_help_semi_imi"><![CDATA[Voit asettaa fyysisen näppäimistön asettelun Androidin asetusten Fyysinen näppäimistö -kohdasta.]]></string>
     <string name="livmoto_dan_1">FinQwerty Livermorium Moto Mod, tanskalainen</string>
     <string name="livmoto_fin_1">FinQwerty Livermorium Moto Mod, suomalainen</string>
     <string name="livmoto_ger_1">FinQwerty Livermorium Moto Mod, saksalainen</string>
